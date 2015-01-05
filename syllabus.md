@@ -6,7 +6,7 @@ layout: default
 
 ## Schedule
 
-# Thursday 8 Jan: 13:30-15:15—Introduction and basics:
+### Thursday 8 Jan: 13:30-15:15—Introduction and basics:
 
 1.	Introduction: why is there a need for these tools? (15 min)
 2.	Introduction to version control (10 min)
@@ -19,7 +19,7 @@ layout: default
   -	Working with TexStudio
   -	Hands on exercises (headers, figures, tables, equations)
 
-# Thursday 22 Jan: 13:30-15:15—More advanced use of LaTeX
+### Thursday 22 Jan: 13:30-15:15—More advanced use of LaTeX
 
 1.	Use of packages (15 min)
 2.	Better tables (15 min)
