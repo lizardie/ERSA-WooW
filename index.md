@@ -15,11 +15,15 @@ This is the course website for **{{site.data.course.number}}**:
 
 #### For whom?
 
-Students who are interested in using \$$ \LaTeX $$ and \$$ 5+5 $$ . 
+Students who are interested in using latex for larger project such as theses in combination with reference managers and revision control systems.
 
 #### Tuition form
 
-two workshop of two hours each, where each workshop is characterized by hands-on exercises
+Two workshop of two hours each, where each workshop is characterized by in-class hands-on exercises
+
+#### Preparation
+
+Each student willing to participate is highly encouraged to bring his or her own laptop and to install the required packages indicated on the [download](./download)
 
 #### Compulsory?
 
