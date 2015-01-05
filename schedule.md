@@ -1,6 +1,6 @@
 ---
 title: Schedule
-category: schedule
+category: syllabus
 layout: default
 ---
 
