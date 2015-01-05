@@ -15,7 +15,7 @@ This is the course website for **{{site.data.course.number}}**:
 
 #### For whom?
 
-Students who are interested in using $$ \LaTeX $$
+Students who are interested in using \$$ \LaTeX $$ and \$$ 5+5 $$. 
 
 #### Tuition form
 
