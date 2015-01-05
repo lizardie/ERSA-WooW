@@ -1,30 +1,25 @@
 ---
-title: Syllabus
-category: syllabus
+title: Schedule
+category: schedule
 layout: default
 ---
 
-## Syllabus
+## Schedule
 
-**{{site.data.course.number}}**: {{site.data.course.name}}  
-**Instructor**: {{site.data.instructor.name}}  
-(etc)
+Thursday 8 Jan: 13:30-15:15—Introduction and basics:
+1)	Introduction: why is there a need for these tools? (15 min)
+2)	Introduction to version control (10 min)
+3)	Reference managers (10 min)
+4)	Intro to LaTeX: (10 min)
+a.	What is it? 
+b.	Why is it cool?
+c.	Are we not doing straightforward things in a very complex way?
+5)	Working with Latex (45 min)
+a.	Working with TexStudio
+b.	Hands on exercises (headers, figures, tables, equations)
 
-### Required Books
-
-* Hastie, Tibshirani, and Friedman,
-  [*The Elements of Statistical Learning*](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
-
-* R. Harrison Wagner,
-  [*War and the State*](http://www.amazon.com/War-State-Theory-International-Politics/dp/0472069810)
-
-
-### Schedule
-
-1. **Dates**: Subject
-    * Reading 1
-    * Reading 2
-
-2. **Dates**: Subject
-    * Reading 1
-    * Reading 2
+Thursday 22 Jan: 13:30-15:15—More advanced use of LaTeX
+1)	Use of packages (15 min)
+2)	Better tables (15 min)
+3)	Use of BibTex/BibLatex (30 min)
+4)	Making presentations in Latex (30 min)
