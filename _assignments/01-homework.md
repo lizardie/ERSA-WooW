@@ -1,11 +1,5 @@
 ---
-title: First Assignment
+title: Workshop 1
 ---
 
-Due in class on **MM DD**.
-
-### Problems
-
-1. Solve a problem.
-
-2. And another.
+### In-class assignments 
