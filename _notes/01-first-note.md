@@ -1,7 +1,11 @@
 ---
-title: First set of notes
+title: Workshop 1
 ---
 
-### Heading
+## Workshop 1
 
-This is the first set of notes.
+TBA
+
+## Additional material
+
+TBA
