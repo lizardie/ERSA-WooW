@@ -6,7 +6,7 @@ layout: default
 
 ## {{site.data.course.name}}
 
-This is the course website for **{{site.data.course.number}}**:
+This is the workshop website for **{{site.data.course.number}}**:
 {{site.data.course.name}}.
 
 ### Introduction
