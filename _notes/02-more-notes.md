@@ -1,7 +1,13 @@
 ---
-title: More notes
+title: Workshop 2
 ---
 
-### Another Heading
+## Workshop 2
 
-This is the second set of notes.
+### Slides
+
+TBA
+
+### Additional material
+
+TBA
