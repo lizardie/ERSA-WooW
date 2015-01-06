@@ -30,4 +30,4 @@ layout: default
 3.	Use of *BibTex*/*BibLatex* (30 min)
 4.	Making presentations in *Latex*: (30 min)
   - Reusing your only material to retain that lovely consistent look
-  - Avoiding the [pitfalls](http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf) of *Powerpoint* 
+  - Avoiding the [pitfalls](http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf) of *PowerPoint* 
