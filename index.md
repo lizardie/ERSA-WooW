@@ -11,7 +11,9 @@ This is the workshop website for **{{site.data.course.number}}**:
 
 ### Introduction
 
-Contrary to what many people believe, there are very good alternatives to *Word* (and *PowerPoint*). In the scientific world, though significantly less in the social sciences, the typesetting program *LaTeX* is often used. In many ways, including style, consistency, performance, and--most importantly--reproducability, *LaTeX* is far more superior than *Word*. The downside is that *LaTeX* has a far more steeper learning curve than *Word*. We therefore give two introductionary workshops for those students who are sincerely interested in using *LaTeX* (and some associated applications) and are willing to give it a try. 
+Contrary to what many people believe, there are very good alternatives to *Word* (and *PowerPoint*). In the scientific world, though significantly less in the social sciences, the typesetting program *LaTeX* is often used. In many ways, including style, consistency, performance, and--most importantly--reproducability, *LaTeX* is far more superior than *Word*. The downside is that *LaTeX* has a far more steeper learning curve than *Word*.[^1] We therefore give two introductionary workshops for those students who are sincerely interested in using *LaTeX* (and some associated applications) and are willing to give it a try. 
+
+[^1] : This is debatable. *Word* has usually far more capabilities for structuring and consistent formatting, but most people do no not use it. Some people actually argue that *LaTeX* to maintain proper and consistent lay-out troughout larger documents than *Word*, because it *forces* authors to structure their text. 
 
 Moreover, being able to work with *LaTeX* enables you to better understand why so many scientific applications nowadays center around using plain `.txt` files, such as *GitHub*, *R*, *Stata* do files, *SPSS* sytax files, scriptfiles for *ArcGis*, *HTML*, blogs and data you can readily derive from websites such as *Twitter* and *Google*. 
 
