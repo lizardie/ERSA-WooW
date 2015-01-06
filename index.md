@@ -21,7 +21,7 @@ Be warned however, deciding to use new tools are usually costly in terms of **ti
 
 #### For whom?
 
-Students who are interested in using *LaTeX* for larger projects such as theses in combination with reference managers (in this case we use *Mendeley* and revision control systems (we shortly explain the graphical user interface of *GitHub*.
+Students who are interested in using *LaTeX* for larger projects such as theses in combination with reference managers (in this case we use *Mendeley* and revision control systems (we shortly explain the graphical user interface of *GitHub*).
 
 #### Tuition form
 
