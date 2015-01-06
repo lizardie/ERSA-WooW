@@ -2,8 +2,6 @@
 title: Workshop 2
 ---
 
-## Workshop 2
-
 ### Slides
 
 TBA
