@@ -7,7 +7,7 @@ layout: default
 ## Which stuff to download
 
 * A *LaTeX* distribution:
-    * __Windows__ [Miktex](http://miktex.org/) The most used _Latex_ distribution for windows
+    * __Windows__ [Miktex](http://miktex.org/) The most used _LaTeX_ distribution for windows
     * __Mac__ [MacTex package](https://tug.org/mactex/) Most complete distribution for OsX
 
 * A *LaTeX* editor:
