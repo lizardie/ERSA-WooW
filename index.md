@@ -47,4 +47,4 @@ Thursday, January 22 : 13:30 - 15:15
 
 #### Where?
 
-To be announced
+14A-28
