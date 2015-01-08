@@ -312,4 +312,18 @@ Better is to include them in a floating environment (this is where typically the
 
 ## Inserting tables
 
+- Within a table environment and most basic with tabubar, so:
 
+```
+\begin{table}[h!]
+    \caption{Who is afraid of ...}
+    \label{tab:colors}
+    \begin{tabular}{ccc} 
+        \hline
+            1   & 2      & 3 \\ 
+        \hline
+            red & yellow & blue 
+        \hline
+    \begin{tabular}
+\end{table}
+```
