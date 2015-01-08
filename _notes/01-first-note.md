@@ -4,7 +4,7 @@ title: Workshop 1
 
 ### Slides
 
-TBA
+* [`.pdf` slides](../slides/01-intro.pdf) First set of slides for the first workshop
 
 ### Additional material
 
