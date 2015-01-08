@@ -1,17 +1,27 @@
 ---
-title: "Introduction to Latex"
+title: "Advanced Research Tools for Economics and Business Administration"
 author: "Thomas de Graaff"
 date: "January 8, 2015"
 output:
   beamer_presentation:
+    colortheme: beaver
+    fig_height: 5
+    fig_width: 8
+    fonttheme: structurebold
+    keep_tex: yes
     slide_level: 2
+    theme: Darmstadt
+  ioslides_presentation:
+    fig.align: center
+    fig_height: 6
+    fig_width: 10
+    widescreen: yes
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
-  ioslides_presentation: default
 ---
 
 # Introduction
@@ -20,56 +30,35 @@ output:
 
 - In the *social sciences* few attention to what tools to use (and why they make sense)
 
-- Increasing *need* for/in openness & transparancy
+- Increasing *need* for/in openness, reproducability & transparancy 
 
     - from journals, universities and governments
     - increase in cooperation (over wider distances)
     - access to your own files
     - make yourself more visible 
 
-- Why *we* want to give this workshop
+- Why *I* want to give this workshop
 
     - intrinsic interest
-    - our goal: pre-conferences workshops / courses
+    - my goal: pre-conferences workshops / courses
 
-## What we want (and don't want) with this workshop 
+## What I want (and don't want) with this workshop 
 
-- We are mostly interested in the principles behind a good open (scientific) workflow, aware of the facts that
+- Give a general introduction of why some tools work together
 
-    - there is no final, optimal, set of workflow tools
-    - investment is very, very costly
+    - Why version control systems?
+    - Why reference managers
 
-- However, being a practical workshop we do
+- Give an introduction to \LaTeX
 
-    - work with a specific set of tools (markdown, R, RStudio, git) which
-    - enables us *in this workshop* to  make a paper reproducable and open
+    - First the basics
+    - Next workshop: some advanced stuff
     
-## How we do it
+- What *I* do not want
 
-- Every session start with some introductionary slides 
-
-- Then some assignment is given
-    - use with some tool
-    - try to figure it out for yourself
+    - Tell you what applications to use (**you** need to decide and make a **well-informed** decision)
     
-- Usually directed to making [this paper](http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/WP322.pdf) reproducable
-    
-## Related work 
-
-- Inspired by Kieran Healey's (associate professor in sociology) work: [Choosing your Workflow Applications](http://kieranhealy.org/files/misc/workflow-apps.pdf)
-
-- Courses for reproducable research seems to pop up everywhere (but mostly in datascience courses):
-    - Datascience course: [https://www.coursera.org/](https://www.coursera.org/)
-    - Tools for Reproducible Research [http://kbroman.org/Tools4RR/](http://kbroman.org/Tools4RR/)
-
 # Workflow 
-
-## Open?
-
-* Workflow: 
-  *Progression of steps (tasks, events, interactions) that comprise a work process, involve two or more persons, and create or add value to the organization's activities* ([BusinessDictionary](http://www.businessdictionary.com/definition/workflow.html))
-
-* Open workflow: One that enhances *transparency*, *collaboration* and *reproducibility*
 
 ## Research cycle
 
@@ -86,177 +75,163 @@ output:
     - Efficiency
     - Self-sanity
 
-## Why should it be open?
+## When should I adopt new tools/workflow?
 
-* Open Science
-* Reproducibility
-* Transparency
-* Modularity
-* Portability (across systems and users)
-* Efficiency
-* Visibility
-
-## When should I adopt an open reproducable workflow?
-
-* The sooner the better
-* But think twice about which one (switching is costly)
-* Start one step at a time 
+* The sooner the better (you really have time now)
+* But think twice about which one (switching is costly; not in terms of beer but in terms of time)
+* Start one step at a time (starting with \LaTeX is a pretty neat idea)
 
 *A journey of a thousand miles begins with a single step* 
 
 Lao-tzu
-
-# Reproducability
 
 ## In general
 
 > In science consensus is irrelevant. What is relevant is reproducible results. The greatest scientists in history are great precisely because they broke with the consensus (Michael Crichton)
 
 
-## In computation science:
+## In data science
+
+- Typically, a publication is not at the heart of research
+
+    - Code
+    - Data
 
 > The data and code used to make a finding are available and they are sufficient for an independent researcher to recreate the finding (Peng, 2011)
 
-- Literature programming (Donald E. Knuth, 1984):
-
-    - weaving of **code**, **documentation** and **output** (articles, presentations, websites) 
-
-## In the social sciences?
-
-- Complete reproducability often not feasible
-    - qualitative research
-    - propietary data (?)
-- but you can come a long way, especially with
-    - theoretical work
-    - quantitative (e.g., statistical or simulation) work
-
-- Goal should be more to make your research as reproducable *as possible*
 
 ## Code, documentation and output
 
 1. Synonyms
 
-2. All based on text files
+2. All based on `.txt` files 
 
 3. Encompasses almost anything
-    - data itself
-    - set of commands for data cleaning and statistical analysis
-    - database with references 
-    - transcript of interviews
-    - text for aticles, presentations or websites
+    - data itself (`.csv`)
+    - set of commands for data cleaning and statistical analysis (`.do`, `.R`)
+    - database with references (`.bib`)
+    - transcript of interviews (`.tex`)
+    - text for aticles, presentations or websites (`.tex`, `.html`)
     
 4. Only output is displayed/interpreted differently (e.g., in a browser or pdf viewer)
 
-## Our goal (not being ambitious)
+## Tools for workflows in this workshop
 
-What we want is that with *one single* command we
+- Versioning system (Time-Machine, Dropbox, GitHub)
 
-- read in and transform our data
-- run the analysis
-- create output (tables and figures)
-- combine output with text and references
-- create presentation material (paper, slides, webpages) and
-- publish presentation material on an open repository
-
-This all under a full fledged versioning control system 
-
-## Tools for reproducability
+- Reference manager (Mendeley)
 
 - Markup lanaguages
-    - Markdown
-    - LaTeX 
+    - \LaTeX 
     - HTML
+
+# Version Control Systems
+
+## Folder structure of your new project (theses, paper, research)
+
+- Think *a priori* about project set-up
+
+    - Seperate analysis, data and output files
+
+- Be careful with source data!
+
+    - Seperate source and derived data files
+    - Typically
+        
+        - you get/collect data
+        - transform data
+        - analyse data
     
-- Terminal tools (GNU make, diff, pandoc)
+    - Keep track of all these stages!
+
+## Why is version control systems such a neat idea
+
+![Research cycle](fig/phdcomic.png)
+
+## Version control systems
+
+With version control system only one copy of each file (but with fully backed-up history)
+
+A version control system is not the same as a backup devise, but the combination is a killer-ap
+
+- Time machine (mac only) with external hard drive
+
+- Dropbox
+
+- more advanced stuff: Git and GitHub
+
+With `.txt` files you can use the `diff` command
+
+# Reference managers
+
+## Why reference managers?
+
+This is a life saver!
+
+> Use one!
+
+Several applications out there:
+
+    - In this case Mendeley (free but not open source)
+    - Make sure it exports to `.bib` files
+    - Search for references (google scholar, jstor, etc.)
+    - Mendeley can import `.pdf`'s
+
+# \LaTeX
+
+## Background
+
+- \TeX has been devised by Donald E. Knuth in the late 70's
+- \LaTeX is a set of macro's around TeX and devised in the 80's
+- \LaTeX is a *typesetting program*, not a *Word processor* 
+
+    - It is actually some code that needs to be compiled
+    - Code is typed in by an editor
+
+- So, huge differences between
+
+    - Word processor: Open Office, Word
+    - Typesetter: \LaTeX, Adobe's InDesign (in general XML)
+    - Editors:
+        
+        - Specific editors: TexStudio, TexShop, RStudio
+        - General editors: Sublime, TextMate, Notepad++, Vim, Emacs
+        
+## Disadvantages
+
+- Not WYSIWYG 
+- You nead to learn (quite) some commands
+
+    - Learning curve, but
+    - hurray for [cheat sheets](http://www.stdout.org/~winston/latex/latexsheet-a4.pdf) and Google
     
-- Versioning system (Git & VCN)
+- Very specific lay-outs difficult to attain
+- Basic \LaTeX has *difficulties* with incorporating new fonts (Hoefler, minion pro)
 
-- Reference manager (bibdesk/Mendeley)
-
-## Tools for reproducability (cnt.)
-
-- Statistical software (pure command line driven): Python and R 
-
-- Environments
-    - [R](http://www.rproject.org/) and [RStudio](http://www.rstudio.com) environment
-    - Python and [iPython notebook](http://ipython.org/notebook.html) environment
-    - Python and [Sumatra](http://neuralensemble.org/sumatra)
-    - Emacs [org mode](http://orgmode.org/) 
+    - XeTeX 
+    - For the purists: \LaTeX does it right [(\LaTeX vs Word)](http://oestrem.com/thingstwice/2007/05/latex-vs-word-vs-writer/)
     
-## Tools for openness
+## Advantages
 
-- Repositories:
-    - Github (host webpages as well)
-    - Bitbucket
+- Free (as in beer) and ubiquitous
+- WYSIWYM
+- Consistent lay-out throughout the whole document (including tables, appendices, formulas, source code, etc)
+- Internal references are a breeze (references, tables of, indices)
+- Forced to structure documents
+- Macros, thus scriptable
+- Large community, thus a package for almost everything (books, articles, presentation, posters, exams, musicscores)
+- Superior typography & output
+- Large publishers (i.e., Elsevier and Springer) have \LaTeX templates for their articles
 
-- R packages [http://cran.r-project.org/](http://cran.r-project.org/)
+## How does it work in practice?
 
-- iPython notebook viewer [http://nbviewer.ipython.org/](http://nbviewer.ipython.org/)
+- You edit a `.tex` file without thinking about how it looks
+    
+    - distraction free writing (yeah right)
+    
+- You then compile it
 
-## Examples
-
-*Reproducible Research with R and RStudio* Book1
-
-- [https://github.com/christophergandrud/Rep-Res-Book](https://github.com/christophergandrud/Rep-Res-Book)
-
-Amsterdam paper example using ipython notebook:
-
-* [http://darribas.org/buzz_adam](http://darribas.org/buzz_adam)
-
-## What we use in this workshop
-
-1. R and RStudio (with Yihui Xie's  `knitr` package)
-2. Markdown language
-3. Bibdesk/Mendeley
-4. Git and Github
-5. GNU make
-
-Only implicitly we make use of LaTeX, BibTex, HTML and pandoc (all under the hood of RStudio)
-
-# Schedule
-
-## Schedule Day 1 - Friday Sept. 5th
-
-- **[9am-12am]** Introduction
-    * Concepts behind open workflows/Overview of tools
-    * Install session
-
-[Lunch]
-
-- **[1pm-3pm]** Version control and task automation
-    * Terminal/git/make
-
-[Break]
-
-- **[3:30pm-5:30pm]** Typesetting
-    * Markdown/LaTeX/bibtex/pandoc/RStudion
-
-[Diner]
-
-- Location and time: To be announced
-
-## Schedule Day 2 - Saturday Sept. 6th.
-
-- **[9am-11am]** Data analysis
-    * R
-
-[break]
-
-- **[11:30am-1pm]** Publishing
-    - Slides
-    - Publishing on GitHub
-    - Other publication channels
-
-[Lunch]
-
-# In conclusion
-
-## Loose ends...
-
-- Questions?
-
-
-This workshop is financially supported by FOSTER. 
-![Foster logo](fig/FOSTER-logo-small.jpg)
-
-
+    - \LaTeX is unforgiving: if there is an error, usually it does not compile
+    - Typically, errors are missing brackets or parentheses. 
+    
+- Typically, source `.tex` file is compiled into `.pdf`
