@@ -1,5 +1,5 @@
 \documentclass[]{article}
-\usepackage{lipsum, graphicx}
+\usepackage{lipsum, graphicx, natbib}
 %opening
 \title{A brilliant paper!\footnote{with a little help of my students.}}
 \author{Thomas de Graaff}
@@ -17,9 +17,15 @@
 \subsection{Why do we need it?}
 
 \lipsum[2]
-\cite{Braysy2009,Cruijssen2007, Cruijssen2007a}
+According to \citet{Braysy2009,Cruijssen2007, Cruijssen2007a} \lipsum[2]
+Hmmm, okay. \footnote{Yeah right}
 
 \section{Text control}
+
+\begin{description}
+	\item[one] \lipsum[1]
+	\item[two] \lipsum[1]
+\end{description}
 
 \begin{itemize}
 	\item number 1
@@ -44,16 +50,17 @@ Look at what we have found in equation \ref{eq:marg}!
 
 \subsection{A cool picture}
 
-\includegraphics{../Figs/home_stalin_poster}
+%\includegraphics{../Figs/home_stalin_poster}
 %\includegraphics[width=1.0\textwidth]{../Figs/home_stalin_poster}
 
-%\begin{figure}[h!]
-%	\includegraphics[width=1.0\textwidth]{../Figs/home_stalin_poster}
-%	\caption{No is bullet list like Stalin's bullet list}
-%\end{figure}
+\begin{figure}[h!]
+	\includegraphics[width=1.0\textwidth]{../Figs/home_stalin_poster}
+	\caption{No is bullet list like Stalin's bullet list}
+\end{figure}
 
 \subsection{Tables}
 
+Do not mention the war! \citep{Cruijssen2010}
 \begin{table}
 	\caption{A great table}
 	\label{tab: greattable}
