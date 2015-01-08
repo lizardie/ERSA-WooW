@@ -345,7 +345,7 @@ With \texttt{.txt} files you can use the \texttt{diff} command
 
 \section{Reference managers}\label{reference-managers}
 
-\begin{frame}[fragile]{Why reference managers?}
+\begin{frame}{Why reference managers?}
 
 This is a life saver!
 
@@ -355,12 +355,17 @@ Use one!
 
 Several applications out there:
 
-\begin{verbatim}
-- In this case Mendeley (free but not open source)
-- Make sure it exports to `.bib` files
-- Search for references (google scholar, jstor, etc.)
-- Mendeley can import `.pdf`'s
-\end{verbatim}
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  In this case Mendeley (free but not open source)
+\item
+  Make sure it exports to \texttt{.bib} files
+\item
+  Search for references (google scholar, jstor, etc.)
+\item
+  Mendeley can import \texttt{.pdf}'s
+\end{itemize}
 
 \end{frame}
 
@@ -496,6 +501,111 @@ Several applications out there:
 \item
   Typically, source \texttt{.tex} file is compiled into \texttt{.pdf}
 \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Basic set-up}
+
+\begin{verbatim}
+\documentclass[]{article}
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{}
+
+\end{document}
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}{Creating some text}
+
+\begin{itemize}
+\item
+  Use a first package: \texttt{\textbackslash{}usepackage\{lipsum\}}
+\item
+  Create an abstract, title, authors and will in some sections
+\item
+  Create subsections
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Further text control}
+
+\begin{itemize}
+\item
+  itemization
+\item
+  enumeration
+\item
+  bold
+\item
+  emphasize
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Inserting equations}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Inline: \$e=mc\^{}2\$ will be $e=mc^2$
+\end{itemize}
+
+or
+
+\begin{verbatim}
+\begin{equation}
+e=mc^2
+\end{equation}
+\end{verbatim}
+
+will render in
+
+\[
+e=mc^2
+\]
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Equations can be as complex (cool) as you want
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Inserting figures}
+
+\begin{verbatim}
+\usepackage{graphicx}
+
+\includegraphics{../Figs/home_stalin_poster}
+\end{verbatim}
+
+Better is to include them in a floating environment (this is where
+typically the problem starts)
+
+\begin{verbatim}
+\begin{figure}[htb!]
+    \includegraphics[width = 1.0\textwidth]
+    {../Figs/home_stalin_poster}
+    \caption{Next slide please!}
+\end{figure}
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}{Inserting tables}
 
 \end{frame}
 

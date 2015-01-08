@@ -172,10 +172,10 @@ This is a life saver!
 
 Several applications out there:
 
-    - In this case Mendeley (free but not open source)
-    - Make sure it exports to `.bib` files
-    - Search for references (google scholar, jstor, etc.)
-    - Mendeley can import `.pdf`'s
+- In this case Mendeley (free but not open source)
+- Make sure it exports to `.bib` files
+- Search for references (google scholar, jstor, etc.)
+- Mendeley can import `.pdf`'s
 
 # \LaTeX
 
@@ -235,3 +235,81 @@ Several applications out there:
     - Typically, errors are missing brackets or parentheses. 
     
 - Typically, source `.tex` file is compiled into `.pdf`
+
+## Basic set-up
+```{}
+\documentclass[]{article}
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\end{abstract}
+
+\section{}
+
+\end{document}
+```
+
+## Creating some text
+
+- Use a first package: `\usepackage{lipsum}`
+
+- Create an abstract, title, authors and will in some sections
+
+- Create subsections
+
+## Further text control
+
+- itemization
+
+- enumeration
+
+- bold 
+
+- emphasize 
+
+## Inserting equations
+
+- Inline: \$e=mc^2\$ will be $e=mc^2$
+
+or
+
+```
+\begin{equation}
+e=mc^2
+\end{equation}
+```
+will render in 
+
+$$
+e=mc^2
+$$
+
+- Equations can be as complex (cool) as you want
+
+## Inserting figures
+
+```
+\usepackage{graphicx}
+
+\includegraphics{../Figs/home_stalin_poster}
+```
+
+Better is to include them in a floating environment (this is where typically the problem starts)
+
+```
+\begin{figure}[htb!]
+    \includegraphics[width = 1.0\textwidth]
+    {../Figs/home_stalin_poster}
+    \caption{Next slide please!}
+\end{figure}
+```
+
+## Inserting tables
+
+
