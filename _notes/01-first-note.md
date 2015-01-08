@@ -8,9 +8,9 @@ title: Workshop 1
 
 ### Material 
 
-* [`.tex` file](../New_Cool_Project/Output/Paper/temp.tex) The whole `.tex` file that we discussed. 
-* [`.bib` file](../New_Cool_Project/Output/Paper/temp.bib) With associated `.bib` files
-* [`.pdf` file](../New_Cool_Project/Output/Paper/temp.pdf) which should compile in this `.pdf` file 
+* [`.tex` file](../New_Cool_Project/Output/Paper/Temp.tex) The whole `.tex` file that we discussed. 
+* [`.bib` file](../New_Cool_Project/Output/Paper/Temp.bib) With associated `.bib` files
+* [`.pdf` file](../New_Cool_Project/Output/Paper/Temp.pdf) which should compile in this `.pdf` file 
 
 ### Additional material
 
