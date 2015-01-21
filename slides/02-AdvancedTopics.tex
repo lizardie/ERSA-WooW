@@ -27,6 +27,29 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 % use microtype if available
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{{#1}}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{{#1}}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{{#1}}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{{#1}}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{{#1}}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{{#1}}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{{#1}}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{{#1}}}
+\newcommand{\RegionMarkerTok}[1]{{#1}}
+\newcommand{\ErrorTok}[1]{\textbf{{#1}}}
+\newcommand{\NormalTok}[1]{{#1}}
 
 % Comment these out if you don't want a slide with just the
 % part/section/subsection/subsubsection title:
@@ -84,6 +107,67 @@ Still somewhat more theoretical (why do you want to change tools)
 
 \end{frame}
 
+\begin{frame}[fragile]{A quick recap}
+
+\begin{itemize}
+\item
+  Specific \LaTeX~commands starts with an \textbackslash{}
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{\textbackslash{}LaTeX}
+  \end{itemize}
+\item
+  Inline equations are within \$ \$
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \texttt{\$\textbackslash{}frac\{a\}\{b\}\$ is the fraction between \$a\$ and \$b\$}
+  \end{itemize}
+\item
+  There are a number of symbols that you cannot immediately use:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    \textbackslash{}, \$, \&, \%, \{ and \} are the most important
+    (solution: start with an \texttt{\textbackslash{}})
+  \end{itemize}
+\item
+  Environments start and end
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}begin\{equation\} }
+\NormalTok{a^2 + b^2 = c^2 }
+\NormalTok{\textbackslash{}end\{equation\}}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{General structure}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}documentclass[twocolumn, a4paper]\{article\}}
+
+\CommentTok{% Preamble: how should it look like}
+\NormalTok{\textbackslash{}usepackage\{multicol, lipsum\}}
+\NormalTok{\textbackslash{}usepackage[english, german]\{babel\}}
+
+\NormalTok{\textbackslash{}begin\{document\}}
+    \CommentTok{% Body: the real contents}
+    \NormalTok{\textbackslash{}lipsum}
+\NormalTok{\textbackslash{}end\{document\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
 \begin{frame}{This tutorial}
 
 More practical, play around with \LaTeX. In specific:
@@ -104,9 +188,31 @@ More practical, play around with \LaTeX. In specific:
 
 \section{Making appearances}\label{making-appearances}
 
-\begin{frame}{The use of packages}
+\begin{frame}[fragile]{The use of packages}
 
-There are lots of them, see \href{http://www.ctan.org}{CTAN}
+\begin{itemize}
+\item
+  Typically, packages are used to change appearance
+\item
+  There are lots of them, see \href{http://www.ctan.org}{CTAN}
+\item
+  Often used packages
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    amsmath, graphicx, subfig, marvosym, microtype, booktabs, lipsum,
+    pdflscape, fullpage
+  \end{itemize}
+\item
+  format:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}usepackage\{amsmath, graphicx\}}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
 
 \end{frame}
 

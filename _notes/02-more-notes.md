@@ -10,6 +10,10 @@ TBA
 
 * [material in `.zip`](../New_Cool_Project/ShinyPaper.zip) : All required material in zip format
 
+### Cheat sheet
+
+* [LaTeX](http://tug.ctan.org/tex-archive/info/latexcheat/latexcheat/latexsheet.pdf) : Latex commands
+
 ### Additional material
 
 * [Packages](http://www.ctan.org) : All available packages for LaTeX

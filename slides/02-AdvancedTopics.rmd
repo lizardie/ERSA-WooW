@@ -38,6 +38,39 @@ Still somewhat more theoretical (why do you want to change tools)
     
 - pros and cons of \LaTeX
 
+## A quick recap
+
+- Specific \LaTeX\ commands starts with an \\
+    - `\LaTeX`
+
+- Inline equations are within \$ \$ 
+    - `$\frac{a}{b}$ is the fraction between $a$ and $b$`
+
+- There are a number of symbols that you cannot immediately use:
+    - \\, \$, \&, \%, \{ and \} are the most important (solution: start with an `\`)
+    
+- Environments start and end
+```latex
+\begin{equation} 
+    a^2 + b^2 = c^2 
+\end{equation}
+```
+    
+## General structure
+
+```latex    
+\documentclass[twocolumn, a4paper]{article}
+
+% Preamble: how should it look like
+\usepackage{multicol, lipsum}
+\usepackage[english, german]{babel}
+
+\begin{document}
+    % Body: the real contents
+    \lipsum
+\end{document}
+```
+
 ## This tutorial
 
 More practical, play around with \LaTeX. In specific:
@@ -51,7 +84,17 @@ More practical, play around with \LaTeX. In specific:
 
 ## The use of packages
 
-There are lots of them, see [CTAN](http://www.ctan.org)
+- Typically, packages are used to change appearance
+
+- There are lots of them, see [CTAN](http://www.ctan.org)
+
+- Often used packages
+    - amsmath, graphicx, subfig, marvosym, microtype, booktabs, lipsum, pdflscape, fullpage
+
+- format:
+```latex 
+\usepackage{amsmath, graphicx}
+```
 
 ## The use of classes
 
