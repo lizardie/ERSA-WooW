@@ -1,0 +1,151 @@
+\documentclass[ignorenonframetext,]{beamer}
+\usetheme{Darmstadt}
+\usecolortheme{beaver}
+\usefonttheme{structurebold}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{:}
+\setbeamercolor{caption name}{fg=normal text.fg}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage{lmodern}
+\ifxetex
+  \usepackage{fontspec,xltxtra,xunicode}
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\else
+  \ifluatex
+    \usepackage{fontspec}
+    \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+    \newcommand{\euro}{€}
+  \else
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+      \fi
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+
+% Comment these out if you don't want a slide with just the
+% part/section/subsection/subsubsection title:
+\AtBeginPart{
+  \let\insertpartnumber\relax
+  \let\partname\relax
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
+\AtBeginSubsection{
+  \let\insertsubsectionnumber\relax
+  \let\subsectionname\relax
+  \frame{\subsectionpage}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\setcounter{secnumdepth}{0}
+
+\title{Advanced Research Tools for Economics and Business Administration (Part
+II)}
+\author{Thomas de Graaff}
+\date{January 22, 2015}
+
+\begin{document}
+\frame{\titlepage}
+
+\section{Introduction}\label{introduction}
+
+\begin{frame}{Previous tutorial}
+
+Still somewhat more theoretical (why do you want to change tools)
+
+\begin{itemize}
+\item
+  Importance of writing things down (reproducability)
+\item
+  Text files are the bomb:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    scriptable
+  \item
+    input and output in/for other applications
+  \end{itemize}
+\item
+  pros and cons of \LaTeX
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{This tutorial}
+
+More practical, play around with \LaTeX. In specific:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  packages (make things look better)
+\item
+  figures (usually import them, but sometime make them yourself)
+\item
+  tables (import them!)
+\item
+  slides (just copy \& paste from \texttt{.tex} document)
+\end{itemize}
+
+\end{frame}
+
+\section{Making appearances}\label{making-appearances}
+
+\begin{frame}{The use of packages}
+
+There are lots of them, see \href{http://www.ctan.org}{CTAN}
+
+\end{frame}
+
+\begin{frame}{The use of classes}
+
+\end{frame}
+
+\begin{frame}{Bibliopgraphy}
+
+\end{frame}
+
+\section{Better graphs}\label{better-graphs}
+
+\begin{frame}{Import them}
+
+\end{frame}
+
+\begin{frame}{Making them yourself}
+
+\end{frame}
+
+\section{Better tables}\label{better-tables}
+
+\begin{frame}{Some guidelines}
+
+\end{frame}
+
+\begin{frame}{Importing them}
+
+\end{frame}
+
+\section{Making slides}\label{making-slides}
+
+\begin{frame}{Pros and cons}
+
+\end{frame}
+
+\begin{frame}{Using beamer package}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,79 @@
+---
+title: "Advanced Research Tools for Economics and Business Administration (Part II)"
+author: "Thomas de Graaff"
+date: "January 22, 2015"
+output:
+  beamer_presentation:
+    colortheme: beaver
+    fig_height: 5
+    fig_width: 8
+    fonttheme: structurebold
+    keep_tex: yes
+    slide_level: 2
+    theme: Darmstadt
+  ioslides_presentation:
+    fig.align: center
+    fig_height: 6
+    fig_width: 10
+    widescreen: yes
+  revealjs_presentation:
+    mathjax: default
+    pandoc_args:
+    - --css
+    - fig/journal.css
+    transition: linear
+---
+
+# Introduction
+
+## Previous tutorial
+
+Still somewhat more theoretical (why do you want to change tools)
+
+- Importance of writing things down (reproducability)
+- Text files are the bomb:
+
+    - scriptable
+    - input and output in/for other applications
+    
+- pros and cons of \LaTeX
+
+## This tutorial
+
+More practical, play around with \LaTeX. In specific:
+
+- packages (make things look better)
+- figures (usually import them, but sometime make them yourself)
+- tables (import them!)
+- slides (just copy & paste from `.tex` document)
+
+# Making appearances
+
+## The use of packages
+
+There are lots of them, see [CTAN](http://www.ctan.org)
+
+## The use of classes
+
+## Bibliopgraphy
+
+# Better graphs
+
+## Import them
+
+## Making them yourself
+
+# Better tables
+
+## Some guidelines
+
+## Importing them
+
+# Making slides
+
+## Pros and cons
+
+## Using beamer package
+
+
+

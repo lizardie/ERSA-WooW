@@ -6,6 +6,15 @@ title: Workshop 2
 
 TBA
 
+### How to create a shiny paper material
+
+* [material in `.zip`](../New_Cool_Project/ShinyPaper.zip) : All required material in zip format
+
 ### Additional material
 
-TBA
+* [Packages](http://www.ctan.org) : All available packages for LaTeX
+* [Tikz](http://www.texample.net/media/pgf/builds/pgfmanualCVS2012-11-04.pdf) : Manual for Tikz, a package for figures
+* [Pgfplots](http://pgfplots.sourceforge.net/pgfplots.pdf) : Manual for pgfplots, a package for making graphs
+* [The Beamer user guide](http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/beamer/doc/beameruserguide.pdf) : The not so short Beamer manual
+* [Elsevier's LaTeX template](http://www.elsevier.com/author-schemas/latex-instructions) : A template from a large publisher
+
