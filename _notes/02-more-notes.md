@@ -4,15 +4,17 @@ title: Workshop 2
 
 ### Slides
 
-TBA
+* [`.pdf` slides](../slides/02-AdvancedTopics.pdf) Set of slides for the second workshop
+* [`.tex` slides](../slides/02-AdvancedTopics.tex) Slides in tex format as an example)
 
 ### How to create a shiny paper material
 
 * [material in `.zip`](../New_Cool_Project/ShinyPaper.zip) : All required material in zip format
+* [Shiny paper in `.pdf`](../New_Cool_Project/ShinyPaper/HowToWriteAShinyPaper.pdf) : How in the end it should look like
 
 ### Cheat sheet
 
-* [LaTeX](http://tug.ctan.org/tex-archive/info/latexcheat/latexcheat/latexsheet.pdf) : Latex commands
+* [LaTeX](http://tug.ctan.org/tex-archive/info/latexcheat/latexcheat/latexsheet.pdf) : Latex commands 
 
 ### Additional material
 

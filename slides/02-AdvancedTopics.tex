@@ -73,6 +73,7 @@
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
+\usepackage{pgfplots}
 
 \title{Advanced Research Tools for Economics and Business Administration (Part
 II)}
@@ -82,7 +83,7 @@ II)}
 \begin{document}
 \frame{\titlepage}
 
-\section{Introduction}\label{introduction}
+\section{Where are we}\label{where-are-we}
 
 \begin{frame}{Previous tutorial}
 
@@ -103,6 +104,17 @@ Still somewhat more theoretical (why do you want to change tools)
   \end{itemize}
 \item
   pros and cons of \LaTeX
+\item
+  Why bother with learning \LaTeX?
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    for dead threes (aka paper)
+  \item
+    html (cloud) uses \LaTeX~syntax as well for formula's and graph
+    annotation
+  \end{itemize}
 \end{itemize}
 
 \end{frame}
@@ -177,7 +189,7 @@ More practical, play around with \LaTeX. In specific:
 \item
   packages (make things look better)
 \item
-  figures (usually import them, but sometime make them yourself)
+  figures (usually import them, but sometimeS make them yourself)
 \item
   tables (import them!)
 \item
@@ -194,6 +206,9 @@ More practical, play around with \LaTeX. In specific:
 \item
   Typically, packages are used to change appearance
 \item
+  To ensure no errors, usually opt for the full installation or have
+  access to internet
+\item
   There are lots of them, see \href{http://www.ctan.org}{CTAN}
 \item
   Often used packages
@@ -209,38 +224,228 @@ More practical, play around with \LaTeX. In specific:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{\textbackslash{}usepackage\{amsmath, graphicx\}}
+\NormalTok{\textbackslash{}usepackage[colorlinks=true,citecolor=magenta,}
+        \NormalTok{urlcolor=magenta]\{hyperref\} }
 \end{Highlighting}
 \end{Shaded}
 \end{itemize}
 
 \end{frame}
 
-\begin{frame}{The use of classes}
+\begin{frame}[fragile]{The use of classes}
+
+\begin{itemize}
+\item
+  Typically one uses the \texttt{article} class
+\item
+  However, there is as well a \texttt{book}, \texttt{mininal},
+  \texttt{report}, \texttt{beamer} class etcetera
+\item
+  Specific user written classes are \texttt{memoir} and
+  \texttt{elsarticle} classes
+\item
+  Classes come with options such as
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}documentclass[12pt, a4paper]\{article\}}
+\end{Highlighting}
+\end{Shaded}
+\end{itemize}
 
 \end{frame}
 
-\begin{frame}{Bibliopgraphy}
+\begin{frame}[fragile]{Bibliopgraphy}
+
+Default format is \texttt{BibTeX} - customizable (however limited) -
+defaults is good
+
+If you want to customize quite a lot: \texttt{biblatex-biber}
+combination - usage
+
+\begin{Shaded}
+\begin{Highlighting}[]
+    \NormalTok{\textbackslash{}usepackage[backend=biber]\{biblatex\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{or go nuts}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}usepackage[style= authoryear-icomp, }
+            \NormalTok{backend=bibtex,}
+            \NormalTok{natbib=true, }
+            \NormalTok{firstinits=true, }
+            \NormalTok{uniquename=true,}
+            \NormalTok{backref=false,}
+            \NormalTok{doi=false,}
+            \NormalTok{isbn=false,}
+            \NormalTok{url=false,}
+            \NormalTok{maxnames=2, }
+            \NormalTok{maxbibnames=10, }
+            \NormalTok{dashed =true, }
+            \NormalTok{backend=biber]}
+\NormalTok{            \{biblatex\}}
+\end{Highlighting}
+\end{Shaded}
 
 \end{frame}
 
 \section{Better graphs}\label{better-graphs}
 
-\begin{frame}{Import them}
+\begin{frame}[fragile]{Import them}
+
+Remember figures/graphs and tables in a floating environment
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}begin\{figure\}[h!] }
+    \NormalTok{\textbackslash{}center }
+        \NormalTok{\textbackslash{}includegraphics\{ligatures_latex\} }
+    \NormalTok{\textbackslash{}caption\{...\} }
+    \NormalTok{\textbackslash{}label\{ligatures\}}
+\NormalTok{\textbackslash{}end\{figure\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \texttt{\textbackslash{}ref\{ligatures\}} gives you now the correct
+  internal reference
+\item
+  How to make pictures then:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    In the statistical environment you are working in
+  \item
+    plotly
+  \end{itemize}
+\end{itemize}
 
 \end{frame}
 
-\begin{frame}{Making them yourself}
+\begin{frame}[fragile]{Making them yourself in \LaTeX~(advanced)}
+
+PGF/TikZ combination for producing vector graphics
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}begin\{tikzpicture\}}
+    \NormalTok{\textbackslash{}begin\{axis\}[}
+        \NormalTok{xlabel=$x$,}
+        \NormalTok{ylabel=\{$f(x) = x^2 - x +4$\}}
+    \NormalTok{]}
+    \CommentTok{% use TeX as calculator:}
+    \NormalTok{\textbackslash{}addplot \{x^2 - x +4\};}
+    \NormalTok{\textbackslash{}end\{axis\}}
+\NormalTok{\textbackslash{}end\{tikzpicture\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}{Which results in}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        xlabel=$x$,
+        ylabel={$f(x) = x^2 - x +4$}
+    ]
+    % use TeX as calculator:
+    \addplot {x^2 - x +4};
+    \end{axis}
+\end{tikzpicture}
 
 \end{frame}
 
 \section{Better tables}\label{better-tables}
 
-\begin{frame}{Some guidelines}
+\begin{frame}[fragile]{Some guidelines}
+
+\begin{itemize}
+\item
+  No vertical lines!
+\item
+  small spaces are usually better than horizontal lines
+\item
+  Booktabs is a nice package
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}toprule}
+\NormalTok{\textbackslash{}midrule}
+\NormalTok{\textbackslash{}addlinespace}
+\NormalTok{\textbackslash{}bottomrule}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Only include stuff that is important
+\end{itemize}
 
 \end{frame}
 
-\begin{frame}{Importing them}
+\begin{frame}[fragile]{This does not look nice!}
+
+\tiny
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}begin\{table\}[htbp]\textbackslash{}centering}
+\NormalTok{\textbackslash{}def\textbackslash{}sym#1\{\textbackslash{}ifmmode^\{#1\}\textbackslash{}else\textbackslash{}(^\{#1\}\textbackslash{})\textbackslash{}fi\}}
+\NormalTok{\textbackslash{}caption\{Dep = Milles per Gallon\}}
+\NormalTok{\textbackslash{}begin\{tabular\}\{l*\{2\}\{D\{.\}\{.\}\{-1\}\}\}}
+\NormalTok{\textbackslash{}toprule}
+                    \NormalTok{&\textbackslash{}multicolumn\{1\}\{c\}\{(1)\}&\textbackslash{}multicolumn\{1\}\{c\}\{(2)\}\textbackslash{}\textbackslash{}}
+                    \NormalTok{&\textbackslash{}multicolumn\{1\}\{c\}\{Mileage (mpg)\}&\textbackslash{}multicolumn\{1\}\{c\}\{Mileage (mpg)\}\textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}midrule}
+\NormalTok{Car type            &     -1.6500  &     -2.2035* \textbackslash{}\textbackslash{}}
+                    \NormalTok{&    (1.0760)  &    (1.0592)  \textbackslash{}\textbackslash{}}
+\NormalTok{Weight (lbs.)       &     -0.0066**&     -0.0166**\textbackslash{}\textbackslash{}}
+                    \NormalTok{&    (0.0006)  &    (0.0040)  \textbackslash{}\textbackslash{}}
+\NormalTok{weight\textbackslash{}_sqr          &              &      0.0000* \textbackslash{}\textbackslash{}}
+                    \NormalTok{&              &    (0.0000)  \textbackslash{}\textbackslash{}}
+\NormalTok{Constant            &     41.6797**&     56.5388**\textbackslash{}\textbackslash{}}
+                    \NormalTok{&    (2.1655)  &    (6.1974)  \textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}midrule}
+\NormalTok{Observations        &          74  &          74  \textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}(R^\{2\}\textbackslash{})           &       0.663  &       0.691  \textbackslash{}\textbackslash{}}
+\NormalTok{F                   &     69.7485  &     52.2515  \textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}bottomrule}
+\NormalTok{\textbackslash{}multicolumn\{3\}\{l\}\{\textbackslash{}footnotesize Standard errors in parentheses\}\textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}multicolumn\{3\}\{l\}\{\textbackslash{}footnotesize + \textbackslash{}(p<0.1\textbackslash{}), * \textbackslash{}(p<0.05\textbackslash{}), ** \textbackslash{}(p<0.01\textbackslash{})\}\textbackslash{}\textbackslash{}}
+\NormalTok{\textbackslash{}end\{tabular\}}
+\NormalTok{\textbackslash{}end\{table\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{So import stuff (stata do-file example) !}
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{sysuse auto                             }\CommentTok{# load car data set}
+\NormalTok{regress mpg foreign weight               }\CommentTok{# first regression}
+\NormalTok{eststo linear                      }\CommentTok{# store first regression}
+\NormalTok{gen weight_sqr =}\StringTok{ }\NormalTok{weight*weight             }\CommentTok{# Quadratic term}
+\NormalTok{regress mpg foreign weight weight_sqr      }\CommentTok{# 2nd regression}
+\NormalTok{eststo quadratic                  }\CommentTok{# store second regression}
+\NormalTok{esttab linear quadratic /}\ErrorTok{//}\StringTok{          }\CommentTok{# write to output file}
+\StringTok{    }\NormalTok{using }\StringTok{"$\{outputfiles\}Results.tex"}\NormalTok{, /}\ErrorTok{//}
+\StringTok{    }\KeywordTok{star}\NormalTok{(+}\StringTok{ }\FloatTok{0.1} \NormalTok{*}\StringTok{ }\FloatTok{0.05} \NormalTok{**}\StringTok{ }\FloatTok{0.01}\NormalTok{) replace }\KeywordTok{b}\NormalTok{(%}\FloatTok{9.}\NormalTok{4f) /}\ErrorTok{//}
+\StringTok{    }\NormalTok{se r2 }\KeywordTok{scalars}\NormalTok{(}\StringTok{"F"}\NormalTok{) label }\KeywordTok{keep} \NormalTok{($covariates) /}\ErrorTok{//}
+\StringTok{    }\KeywordTok{title}\NormalTok{(}\StringTok{"Dep = Milles per Gallon"}\NormalTok{) /}\ErrorTok{//}
+\StringTok{    }\NormalTok{booktabs }\KeywordTok{alignment}\NormalTok{(D\{.\}\{.\}\{-}\DecValTok{1}\NormalTok{\}) nogaps}
+\end{Highlighting}
+\end{Shaded}
 
 \end{frame}
 
@@ -248,9 +453,109 @@ More practical, play around with \LaTeX. In specific:
 
 \begin{frame}{Pros and cons}
 
+\begin{itemize}
+\item
+  Cons:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Not as quick out of the box as PowerPoint (powerphluff)
+  \item
+    Typically beamer package which makes all things look alike
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      Enforces some things (e.g., limited space for tables)
+    \end{itemize}
+  \end{itemize}
+\item
+  Pros:
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    Once created, similar on all versions/operating machines
+  \item
+    You need to spend more time thinking
+  \item
+    Better \texttt{.pdf} handling
+  \item
+    Reuse of equations or code in general
+  \item
+    There is a kind of a philosophy behind it
+  \end{itemize}
+\end{itemize}
+
+\begin{quote}
+\href{http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf}{The Cognitive
+Style of PowerPoint} (Edward Tufte)
+\end{quote}
+
 \end{frame}
 
-\begin{frame}{Using beamer package}
+\begin{frame}[fragile]{Using beamer package}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textbackslash{}documentclass\{beamer\}           }\CommentTok{% new document class}
+    \NormalTok{\textbackslash{}usetheme\{Darmstadt\}                }\CommentTok{% new lay-out}
+    \NormalTok{\textbackslash{}usecolortheme\{beaver\}         }\CommentTok{% new color scheme}
+    \NormalTok{\textbackslash{}begin\{document\}           }\CommentTok{% begin document again}
+       \CommentTok{% usually frames start with begin/end , except}
+    \NormalTok{\textbackslash{}frame\{\textbackslash{}titlepage\} }
+          \CommentTok{% Use section and subsection for slide menu}
+    \NormalTok{\textbackslash{}section\{Where are we\}\textbackslash{}label\{where-are-we\} }
+                              \CommentTok{% Frame and frame title}
+    \NormalTok{\textbackslash{}begin\{frame\}\{Previous tutorial\}}
+        \NormalTok{Still somewhat more theoretical ...}
+        \NormalTok{$a^2 + b^2 = c^2$        }\CommentTok{% formula if you want}
+    \NormalTok{\textbackslash{}end\{frame\}}
+    \NormalTok{\textbackslash{}end\{document\}             }\CommentTok{% always end a document}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}{In conclusion}
+
+\begin{itemize}
+\item
+  This tutorial is more a showcase
+\item
+  Pick out the stuff you appreciate most
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    there is solution for almost everything
+  \item
+    but it requires time investment
+  \item
+    which only later will pay-off
+  \end{itemize}
+\item
+  As things now develop there will be
+
+  \begin{itemize}
+  \itemsep1pt\parskip0pt\parsep0pt
+  \item
+    more ephasis on internet/blogging publishing (slightly more advance
+    than Facebook but on the same par as Wordpress)
+
+    \begin{itemize}
+    \itemsep1pt\parskip0pt\parsep0pt
+    \item
+      including data and figures (dynamic infographics)
+    \item
+      minor role for \LaTeX~
+    \end{itemize}
+  \item
+    For dead trees: \LaTeX~is still the best when editing/writing
+    complex documents
+  \end{itemize}
+\end{itemize}
 
 \end{frame}
 
