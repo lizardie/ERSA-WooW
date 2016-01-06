@@ -21,7 +21,7 @@ Be warned however, deciding to use new tools are usually costly in terms of **ti
 
 #### For whom?
 
-Students who are interested in using *LaTeX* for larger projects such as theses in combination with reference managers (in this case we use *Mendeley* and revision control systems (we shortly explain the graphical user interface of *GitHub*).
+Students who are interested in using *LaTeX* for larger projects such as theses in combination with reference managers (in this case we use *Mendeley*.
 
 #### Tuition form
 
@@ -41,10 +41,10 @@ No
 
 #### When?
 
-Thursday, January 8 :  13:30 - 15:15
+Friday, January 15 : 15:30 - 17:15
 
-Thursday, January 22 : 13:30 - 15:15
+Friday, January 29 : 15:30 - 17:15
 
 #### Where?
 
-14A-28
+9A-41

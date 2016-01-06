@@ -6,13 +6,12 @@ layout: default
 
 ## Schedule
 
-### Thursday 8 Jan: 13:30-15:15 Introduction and basics:
+### Friday 15 Jan: 15:30-17:15 Introduction and basics:
 
 1.	Introduction: why is there a need for these tools? (10 min)
-2.	Introduction to project management and version control (15 min)
-  - Short overview of the gui of *Github*	  
+2.	Introduction to project management and version control (10 min)
 3.	Reference managers and why use them 
-  - Introduction to *Mendeley* (10 min)
+  - Introduction to *Mendeley* (20 min)
 4.	Introduction to *LaTeX*: (10 min)
   -	What is it? 
   -	Why is it different from Wordprocessing application (such as *Word*)?
@@ -23,7 +22,7 @@ layout: default
   -	Working with *TexStudio*
   -	Hands on exercises (headers, figures, tables, equations)
 
-### Thursday 22 Jan: 13:30-15:15 More advanced use of *LaTeX*
+### Friday 29 Jan: 15:30-17:15 More advanced use of *LaTeX*
 
 1.	Use of packages (15 min)
 2.	Better tables (15 min)
