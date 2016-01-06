@@ -39,12 +39,8 @@ No
 
 No
 
-#### When?
+#### When and where?
 
-Friday, January 15 : 15:30 - 17:15
+Friday, January 15 : 15:30 - 17:15 in 9A-41
 
-Friday, January 29 : 15:30 - 17:15
-
-#### Where?
-
-9A-41
+Friday, January 29 : 15:30 - 17:15 in 12A32 

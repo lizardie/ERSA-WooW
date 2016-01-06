@@ -8,6 +8,8 @@ layout: default
 
 ### Friday 15 Jan: 15:30-17:15 Introduction and basics:
 
+#### Location: 9A-41
+
 1.	Introduction: why is there a need for these tools? (10 min)
 2.	Introduction to project management and version control (10 min)
 3.	Reference managers and why use them 
@@ -23,6 +25,8 @@ layout: default
   -	Hands on exercises (headers, figures, tables, equations)
 
 ### Friday 29 Jan: 15:30-17:15 More advanced use of *LaTeX*
+
+#### Location: 12A-32
 
 1.	Use of packages (15 min)
 2.	Better tables (15 min)
