@@ -2,6 +2,7 @@
 \usetheme{Darmstadt}
 \usecolortheme{beaver}
 \usefonttheme{structurebold}
+\usenavigationsymbolstemplate{}
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{:}
 \setbeamercolor{caption name}{fg=normal text.fg}
@@ -51,43 +52,26 @@
 \newcommand{\ErrorTok}[1]{\textbf{{#1}}}
 \newcommand{\NormalTok}[1]{{#1}}
 
-% Comment these out if you don't want a slide with just the
-% part/section/subsection/subsubsection title:
-\AtBeginPart{
-  \let\insertpartnumber\relax
-  \let\partname\relax
-  \frame{\partpage}
-}
-\AtBeginSection{
-  \let\insertsectionnumber\relax
-  \let\sectionname\relax
-  \frame{\sectionpage}
-}
-\AtBeginSubsection{
-  \let\insertsubsectionnumber\relax
-  \let\subsectionname\relax
-  \frame{\subsectionpage}
-}
-
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \setcounter{secnumdepth}{0}
 \usepackage{pgfplots}
+\usepackage{booktabs,dcolumn}
 
 \title{Advanced Research Tools for Economics and Business Administration (Part
 II)}
 \author{Thomas de Graaff}
-\date{January 22, 2015}
+\date{February 3, 2016}
 
 \begin{document}
 \frame{\titlepage}
 
 \section{Where are we}\label{where-are-we}
-
+\subsection{Introduction}
 \begin{frame}{Previous tutorial}
 
-Still somewhat more theoretical (why do you want to change tools)
+Still somewhat more theoretical (why do you want to learn new tools)
 
 \begin{itemize}
 \item
@@ -98,7 +82,7 @@ Still somewhat more theoretical (why do you want to change tools)
   \begin{itemize}
   \itemsep1pt\parskip0pt\parsep0pt
   \item
-    scriptable
+    scriptable (customizable)
   \item
     input and output in/for other applications
   \end{itemize}
@@ -187,19 +171,31 @@ More practical, play around with \LaTeX. In specific:
 \begin{itemize}
 \itemsep1pt\parskip0pt\parsep0pt
 \item
-  packages (make things look better)
+  packages, classes, etc. (make things look better)
 \item
-  figures (usually import them, but sometimeS make them yourself)
+  figures (usually import them, but sometimes make them yourself)
 \item
-  tables (import them!)
+  tables   
+  \item automating tables with statistical output
 \item
   slides (just copy \& paste from \texttt{.tex} document)
 \end{itemize}
+\end{frame}
 
+\begin{frame}{More information}
+	\begin{itemize}
+		\item Look at these slides (.tex file provided)
+		\newline
+		\item Look at the background material (Shiny paper both in .pdf and .tex file)
+		\newline
+		\item Use templates: \url{http://www.latextemplates.com/}
+		\newline
+		\item Problems? Google it: \url{http://tex.stackexchange.com/questions}
+	\end{itemize}
 \end{frame}
 
 \section{Making appearances}\label{making-appearances}
-
+\subsection{Packages, packages, and packages}
 \begin{frame}[fragile]{The use of packages}
 
 \begin{itemize}
@@ -232,8 +228,9 @@ More practical, play around with \LaTeX. In specific:
 
 \end{frame}
 
-\begin{frame}[fragile]{The use of classes}
+\subsection{Classes}
 
+\begin{frame}[fragile]{The use of classes}
 \begin{itemize}
 \item
   Typically one uses the \texttt{article} class
@@ -255,8 +252,9 @@ More practical, play around with \LaTeX. In specific:
 
 \end{frame}
 
-\begin{frame}[fragile]{Bibliopgraphy}
+\subsection{Bibliography}
 
+\begin{frame}[fragile]{Bibliopgraphy}
 Default format is \texttt{BibTeX} - customizable (however limited) -
 defaults is good
 
@@ -294,11 +292,11 @@ combination - usage
 
 \end{frame}
 
-\section{Better graphs}\label{better-graphs}
-
+\section{Working with graphs}\label{better-graphs}
+\subsection{Working with graphs}
 \begin{frame}[fragile]{Import them}
 
-Remember figures/graphs and tables in a floating environment
+Figures/graphs and tables in a floating environment
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -336,6 +334,7 @@ PGF/TikZ combination for producing vector graphics
 
 \begin{Shaded}
 \begin{Highlighting}[]
+\NormalTok{\textbackslash{}usepackage\{tikz, pgfplots\}}	
 \NormalTok{\textbackslash{}begin\{tikzpicture\}}
     \NormalTok{\textbackslash{}begin\{axis\}[}
         \NormalTok{xlabel=$x$,}
@@ -364,10 +363,10 @@ PGF/TikZ combination for producing vector graphics
 
 \end{frame}
 
-\section{Better tables}\label{better-tables}
+\section{Working with tables}\label{better-tables}
+\subsection{Table and stuff}
 
 \begin{frame}[fragile]{Some guidelines}
-
 \begin{itemize}
 \item
   No vertical lines!
@@ -375,7 +374,6 @@ PGF/TikZ combination for producing vector graphics
   small spaces are usually better than horizontal lines
 \item
   Booktabs is a nice package
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{\textbackslash{}toprule}
@@ -387,7 +385,29 @@ PGF/TikZ combination for producing vector graphics
 \item
   Only include stuff that is important
 \end{itemize}
+\end{frame}
 
+\begin{frame}[fragile]{Standard tables}
+\begin{Shaded}
+\begin{Highlighting}
+\NormalTok{\textbackslash{}begin\{table\}[h!]}
+	\NormalTok{\textbackslash{}caption\{Brilliant table\}}
+	\NormalTok{\textbackslash{}label\{tab:briltable\}}
+	\NormalTok{\textbackslash{}begin\{tabular\}\{cc\}}
+		\NormalTok{Row 1 & 100 \textbackslash{}\textbackslash{}}
+		\NormalTok{Row 2 & 200 }
+	\NormalTok{\textbackslash{}end\{tabular\}}
+\NormalTok{\textbackslash{}end\{table\}[h!]}	
+\end{Highlighting}
+\end{Shaded}
+\begin{table}
+	\caption{Brilliant table}
+	\label{tab:briltable}
+	\begin{tabular}{cc}
+		Row 1 & 100 \\
+		Row 2 & 200
+	\end{tabular}
+\end{table}
 \end{frame}
 
 \begin{frame}[fragile]{This does not look nice!}
@@ -442,15 +462,42 @@ PGF/TikZ combination for producing vector graphics
 \StringTok{    }\NormalTok{using }\StringTok{"$\{outputfiles\}Results.tex"}\NormalTok{, /}\ErrorTok{//}
 \StringTok{    }\KeywordTok{star}\NormalTok{(+}\StringTok{ }\FloatTok{0.1} \NormalTok{*}\StringTok{ }\FloatTok{0.05} \NormalTok{**}\StringTok{ }\FloatTok{0.01}\NormalTok{) replace }\KeywordTok{b}\NormalTok{(%}\FloatTok{9.}\NormalTok{4f) /}\ErrorTok{//}
 \StringTok{    }\NormalTok{se r2 }\KeywordTok{scalars}\NormalTok{(}\StringTok{"F"}\NormalTok{) label }\KeywordTok{keep} \NormalTok{($covariates) /}\ErrorTok{//}
-\StringTok{    }\KeywordTok{title}\NormalTok{(}\StringTok{"Dep = Milles per Gallon"}\NormalTok{) /}\ErrorTok{//}
+\StringTok{    }\KeywordTok{title}\NormalTok{(}\StringTok{"Dep = Miles per Gallon"}\NormalTok{) /}\ErrorTok{//}
 \StringTok{    }\NormalTok{booktabs }\KeywordTok{alignment}\NormalTok{(D\{.\}\{.\}\{-}\DecValTok{1}\NormalTok{\}) nogaps}
 \end{Highlighting}
 \end{Shaded}
+\end{frame}
 
+\begin{frame}[fragile]{With output}
+\begin{table}[htbp]\centering\footnotesize 
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Dep = Miles per Gallon}
+\begin{tabular}{l*{2}{D{.}{.}{-1}}}
+\toprule
+&\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}\\
+&\multicolumn{1}{c}{Mileage (mpg)}&\multicolumn{1}{c}{Mileage (mpg)}\\
+\midrule
+Car type & -1.6500 & -2.2035* \\
+& (1.0760) & (1.0592) \\
+Weight (lbs.) & -0.0066**& -0.0166**\\
+& (0.0006) & (0.0040) \\
+weight\_sqr & & 0.0000* \\
+& & (0.0000) \\
+Constant & 41.6797**& 56.5388**\\
+& (2.1655) & (6.1974) \\
+\midrule
+Observations & 74 & 74 \\
+\(R^{2}\) & 0.663 & 0.691 \\
+F & 69.7485 & 52.2515 \\
+\bottomrule
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize + \(p<0.1\), * \(p<0.05\), ** \(p<0.01\)}\\
+\end{tabular}
+\end{table}
 \end{frame}
 
 \section{Making slides}\label{making-slides}
-
+\subsection{Using beamer}
 \begin{frame}{Pros and cons}
 
 \begin{itemize}
