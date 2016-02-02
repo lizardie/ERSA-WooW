@@ -4,13 +4,8 @@ title: Workshop 1
 
 ### Slides
 
-* [`.pdf` slides](../slides/01-intro.pdf) First set of slides for the first workshop
-
-### Material 
-
-* [`.tex` file](../New_Cool_Project/Output/Paper/Temp.tex) The whole `.tex` file that we discussed. 
-* [`.bib` file](../New_Cool_Project/Output/Paper/Temp.bib) With associated `.bib` files
-* [`.pdf` file](../New_Cool_Project/Output/Paper/Temp.pdf) which should compile in this `.pdf` file 
+* [`.pdf` slides](../slides/01-intro.pdf) First set of slides for the first workshop in pdf
+* [`.tex` slides](../slides/01-intro.tex) First set of slides for the first workshop in LaTeX
 
 ### Additional material
 
