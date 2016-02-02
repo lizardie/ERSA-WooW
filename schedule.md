@@ -24,13 +24,15 @@ layout: default
   -	Working with *TexStudio*
   -	Hands on exercises (headers, figures, tables, equations)
 
-### Friday 29 Jan: 15:30-17:15 More advanced use of *LaTeX*
+### Wednesday 3 Feb: 9:00-10:45 More advanced use of *LaTeX*
 
-#### Location: 12A-32
+#### Location: 2A-32
 
-1.	Use of packages (15 min)
-2.	Better tables (15 min)
-3.	Use of *BibTex*/*BibLatex* (30 min)
-4.	Making presentations in *Latex*: (30 min)
+1.  Intriduction (5 min) 
+2.	Use of packages (15 min)
+3.  Inserting figures (15 min)
+4.	Better and automated tables (20 min) 
+5.	Use of *BibTex*/*BibLatex* (10 min)
+6.	Making presentations in *Latex*: (15 min)
   - Reusing your only material to retain that lovely consistent look
   - Avoiding the [pitfalls](http://users.ha.uth.gr/tgd/pt0501/09/Tufte.pdf) of *PowerPoint* 
