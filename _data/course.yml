@@ -1,6 +1,5 @@
-number: ARTEBA
-name: Advanced Research Tools for Economics and Business Administration
+number: ERSA-WooW
+name: ERSA Workshop on open Workflows
 description: >-
-  Two workshops of two hours on more advanced tools to be used in the economics and business administration domain, i.e. LaTeX, 
-  github and reference managers. 
-term: Spring 2015X
+  One workshop of three hours dealing with the basics of markdown in combination with Git and GitHub
+term: Summer 2016
