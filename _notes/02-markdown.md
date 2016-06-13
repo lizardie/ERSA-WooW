@@ -1,5 +1,5 @@
 ---
-title: "Typesetting"
+title: "Markdown"
 ---
 
 In this 45 minutes session we introduce the concept of markup languages in combination with pandoc and working with the terminal. In particular we focus on markdown: a very lightweight and markup language (and probably the fastest way to create slides). In particular we deal with:
