@@ -1,5 +1,5 @@
 ---
-title: Workshop first part
+title: Github
 ---
 
 ### Slides
