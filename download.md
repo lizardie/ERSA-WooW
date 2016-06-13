@@ -6,14 +6,14 @@ layout: default
 
 ## Download
 
-### Assignment for session typesetting (assignment 3)
+### Assignment for session Markdown (assignment 1)
 
-[Assignment 3](Assignments/Assignment3/Assignment3.zip): Zip file containing files for assignment 3
+[Assignment 1](Assignments/Assignment1.md): 
 
-### Assignment for session online publishing (assignment 5)
+### Assignment for session Git (assignment 2)
 
-[Assignment 5](Assignments/Assignment5/Assignment5.zip): Zip file containing files for assignment 5
+[Assignment 2](Assignments/Assignment2.md): Zip file containing files for assignment 5
 
-### Final paper
+### Assignment for session GitHub (assignment 3)
 
-[Final paper](Assignments/Final/Final.zip): Zip file containing file structure of the paper
+[Assignment 3](Assignments/Assignment3.md): Zip file containing file structure of the paper
