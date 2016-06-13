@@ -1,5 +1,5 @@
 ---
-title: Workshop first part
+title: Git assignment
 ---
 
 ### Slides
