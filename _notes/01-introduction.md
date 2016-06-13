@@ -23,8 +23,8 @@ After this session you should:
 
 ### Slides
 
-* [html](../slides/01-intro.html)
-* [pdf](../slides/01-intro.pdf)
+* [html](../slides/01-introduction.html)
+* [pdf](../slides/01-introduction.pdf)
 
 ### References
 
