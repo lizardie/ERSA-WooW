@@ -1,6 +1,6 @@
 ---
-title: Download
-category: download
+title: Assignments
+category: assignments
 layout: default
 ---
 
