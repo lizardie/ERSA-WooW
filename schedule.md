@@ -4,11 +4,15 @@ category: schedule
 layout: default
 ---
 
+## Detials
+
+#### Tuesday August 23, 2016
+
+#### Time: 13:00-16:00
+
+#### Location: tba 
+
 ## Schedule
-
-### Tuesday August 23, 2016
-
-### Time: 13:00-16:00
 
 1. Introduction to reproducibility and open science workflow principles (30 mins.)
     - Install `GitHub` account and `GitHub Desktop`
