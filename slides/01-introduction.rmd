@@ -3,16 +3,16 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
-  slidy_presentation: default
   ioslides_presentation: default
+  beamer_presentation:
+    slide_level: 2
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
-  beamer_presentation:
-    slide_level: 2
+  slidy_presentation: default
 ---
 
 # Introduction
@@ -37,16 +37,14 @@ output:
 
 - However, being a practical workshop we do
 
-    - work with a specific set of tools (markdown, R, RStudio, git) which
-    - enables us *in this workshop* to  make a paper reproducable and open
+    - work with a specific set of tools (`Markdown`, `RStudio`, `Git`/`GitHub`, `GitHub Desktop`) to
+    - play around with concepts of markup languages, versioning and opening up.
     
-## How we do it
+## How we will do it in this workshop
 
 - Every session start with some introductionary slides 
 
-- Then some assignment is given
-    - use with some tool
-    - try to figure it out for yourself
+- Then some hands-on assignments
 
 ## Related work 
 
@@ -55,6 +53,9 @@ output:
 - Courses for reproducable research seems to pop up everywhere (but mostly in datascience courses):
     - Datascience course: [https://www.coursera.org/](https://www.coursera.org/)
     - Tools for Reproducible Research [http://kbroman.org/Tools4RR/](http://kbroman.org/Tools4RR/)
+    
+- Shameless self-promotion: (work with Daniel Arribas-Bel)
+    - WooW-II workshop: [https://github.com/darribas/WooWii](https://github.com/darribas/WooWii); see as well REGION resource: [http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85](http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85)
 
 # Workflow 
 
@@ -65,11 +66,15 @@ output:
 
 * Open workflow: One that enhances *transparency*, *collaboration* and *reproducibility*
 
-## Research cycle
+## Ideal Research cycle 
 
-![Research cycle](fig/ResearchCycle.png)
+![Research cycle](fig/ResearchCycle.gif)
 
-## Why bother about a workflow or tools?
+## Research cycle in practice
+
+![Research cycle](fig/phdcomic.png)
+
+## Why bother about a (open) workflow or tools?
 
 - Good scientific practice: *document how you have achieved your results*; this ensures
 
@@ -80,17 +85,7 @@ output:
     - Efficiency
     - Self-sanity
 
-## Why should it be open?
-
-* Open Science
-* Reproducibility
-* Transparency
-* Modularity
-* Portability (across systems and users)
-* Efficiency
-* Visibility
-
-## When should I adopt an open reproducable workflow?
+## When should I adopt a (open) reproducable workflow?
 
 * The sooner the better
 * But think twice about which one (switching is costly)
@@ -100,7 +95,7 @@ output:
 
 Lao-tzu
 
-# Reproducability
+# Reproducability in this workshop
 
 ## In general
 
@@ -132,7 +127,7 @@ Lao-tzu
 
 2. All based on text files
 
-3. Encompasses almost anything
+3. Encompasses almost anything, e.g.:
     - data itself
     - set of commands for data cleaning and statistical analysis
     - database with references 
@@ -145,19 +140,27 @@ Lao-tzu
 ## Tools for reproducability
 
 - Markup lanaguages
-    - Markdown
+    - `Markdown`
 
-- Versioning system (Git)
+- Versioning system (`Git`)
 
-- Online repository (GitHub)
+- Online repository (`GitHub`)
 
-- Terminal tools (diff, pandoc)
-    RStudio
-    GitHub DeskTop
+- Terminal tools (`diff`, `Pandoc`)
+    - `RStudio`
+    - `GitHub DeskTop`
     
-Only implicitly we make use of LaTeXHTML and pandoc (all under the hood of RStudio)
-
-# Schedule
+Only implicitly we make use of `LaTeX`, `diff`, `HTML` and `Pandoc` (all under the hood of RStudio)
 
 ## Schedule 
 
+1. Introduction to reproducibility and open science workflow principles (30 mins.)
+    - Install `GitHub` account and `GitHub Desktop`
+2. `Markdown` language (45 mins.)
+    - Draft an outline of a paper with `Markdown`
+3. Principles behind `Git` and workflow examples (60 mins.)
+    - Version draft paper with `Git`
+4. Publication of your material on the open repository `GitHub` (45. mins).
+    - Push paper to `Github`
+    - Add `README` file with `Markdown`
+    - Publish paper on `Github pages`
