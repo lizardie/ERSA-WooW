@@ -4,7 +4,7 @@ category: schedule
 layout: default
 ---
 
-## Detials
+## Details
 
 #### Tuesday August 23, 2016
 
