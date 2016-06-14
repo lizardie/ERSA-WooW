@@ -31,8 +31,8 @@ After this session you should:
 
 ### Slides
 
-* [html](../slides/02-typesetting.html)
-* [pdf](../slides/02-typesetting.pdf)
+* [html](../slides/02-markdown.html)
+* [pdf](../slides/02-markdown.pdf)
 
 ### References
 
