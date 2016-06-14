@@ -6,7 +6,7 @@ layout: default
 
 ## Details
 
-#### Tuesday August 23, 2016
+#### Date: Tuesday August 23, 2016
 
 #### Time: 13:00-16:00
 
