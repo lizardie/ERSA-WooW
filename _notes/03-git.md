@@ -26,7 +26,8 @@ This session will provide you with the following skills:
 
 ### Slides
 
-* `git` ([html](../slides/03-git.html), [pdf](../slides/03-git.pdf))
+* [html](../slides/03-git.html)
+* [pdf](../slides/03-git.pdf)
 
 ### References
 
