@@ -17,33 +17,29 @@ subtitle: '[`Git`]'
 
 # Introduction
 
-## Outline
-
-Version control
-
-* What
-* Why
-* How (`git`)
-
 ## Version control *What*
 
 *The modern scientist's lab notebook*
 
-* Keep track of changes in a project *as the occur*
+* Keep track of changes in a project *as they occur*
 * Document the changes
 * Archive the history in a way that allows to easily roll back 
 * Tell differences with other versions (collaboration) and be able to merge
   them
 
-## *Version control Why*
+## Version control *Why*
 
 * **Sanity**: nothing "committed" is lost
+    + just think about GTD principles (or decluttering conform Kondo)
 * **Archival**: keep record on when what changed how
 * **Collaboration**: work simultaneously with colleagues, properly merge and manage conflicts
 
-Very [neat video](http://flowingdata.com/2012/11/30/time-lapse-writing-of-a-research-paper/) exemplifying the concept
+Very [neat video](https://www.youtube.com/watch?v=hNENiG7LAnc) exemplifying the concept
 
-## `git`
+
+# `Git`
+
+## `Git`
 
 Today:
 
@@ -58,6 +54,20 @@ Not today (but you should check it out):
 
 * [Collaboration](http://software-carpentry.org/v5/novice/git/02-collab.html) with `git`
 * [Conflicts](http://software-carpentry.org/v5/novice/git/03-conflict.html) in `git`
+
+## Why not e.g., `Dropbox`? 
+
+`Dropbox` allows as well for
+
+- collaboration (if not only with yourself)
+- rolling back (see historical versions)
+
+Main differences
+
+- `Git` is `better' in noting the differences between versions
+- `Git` is able to merge differences between versions 
+    + between you and yourself
+    + between you and others 
 
 ## `git` - Requirements & Setup
 
