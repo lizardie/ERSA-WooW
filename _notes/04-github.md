@@ -10,4 +10,4 @@ title: Github
 
 ### Additional material
 
-![Octocat](../slides/fig/Octocat_small.jpg)
+![Octocat](../slides/fig/Octocat_small.jpeg)
