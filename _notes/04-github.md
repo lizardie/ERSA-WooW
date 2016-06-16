@@ -10,4 +10,4 @@ title: Github
 
 ### Additional material
 
-![Octocat](../slides/fig/Octocat.png = 100*20)
+![Octocat](../slides/fig/Octocat.jpg)
