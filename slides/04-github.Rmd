@@ -3,8 +3,10 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
-  ioslides_presentation: default
+  ioslides_presentation:
+    fig_height: 5
   beamer_presentation:
+    fig_width: 3
     slide_level: 2
   revealjs_presentation:
     mathjax: default
@@ -16,4 +18,43 @@ subtitle: '[`GitHub`]'
 ---
 
 # Introduction
+
+## What is `GitHub`?
+
++ `GitHub` is a web-based Git repository hosting service (Wikipedia).
++ Directed to hosts open source projects 
++ Social network functionality (fork/clone projects)
++ Other main competitor: `Bitbucket`
+
+```{r, out.width = '100pt', fig.retina = NULL, echo=FALSE}
+knitr::include_graphics("fig/Octocat.png")
+```
+
+## Why publish on `GitHub`?
+
++ You can easily share everything that is related to your paper
+    - Text 
+    - Code
+    - Figures/Tables
++ Could serve as supplementary repository to articles
++ Cooperate with others using `Git` and `GitHub`
++ Timestamp your work 
++ `Github` can host static webpages (in combination with, e.g., Jekyll)
+    - In fact, all workshop materials and website is just one repository [ERSA-WooW](https://github.com/Thdegraaff/ERSA-WooW)
+
+## How to publish on `GitHub`?
+
++ You **pull** material from `GitHub` and you **push** material to `Github`
++ Typical workflow:
+    0. *Pull* changes from `Github`
+    1. Work on some part
+    2. Commit your changes to your *local* repository
+    3. Push all changes to `Github`
+        - Possibly solve conflicts when cooperating 
+
+## Working with `GitHub` desktop?
+
+# The assingment
+
+
 
