@@ -8,5 +8,5 @@ title: Github
 * [pdf](../slides/04-github.pdf)
 
 
-### Additional material
+### Additional material 
 ![Octocat](../slides/fig/Octocat.png)
