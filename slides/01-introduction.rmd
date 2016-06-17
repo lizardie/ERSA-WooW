@@ -3,9 +3,9 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
-  ioslides_presentation: default
   beamer_presentation:
     slide_level: 2
+  ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
     pandoc_args:
@@ -28,17 +28,22 @@ output:
     - access to your own files
     - make yourself more visible 
 
-## What I want (and don't want) with this workshop 
+## Goals of this workshop 
 
-- Interested in the principles behind a good open (scientific) workflow, aware of the facts that
-
+- To make you **familiar** with some concepts and tool, being aware of the facts that
     - there is no final, optimal, set of workflow tools
-    - investment is very, very costly
+    - investment is very, very costly (in time that is)
 
 - However, being a practical workshop we do
 
-    - work with a specific set of tools (`Markdown`, `RStudio`, `Git`/`GitHub`, `GitHub Desktop`) to
-    - play around with concepts of markup languages, versioning and opening up.
+    - work with a specific set of tools to
+    - touch upon the concepts of markup languages, versioning and opening up.
+    
+- Specifically, we use
+
+    - `Git` as a versioning system,
+    - `Github` to make our materials/ideas public, and 
+    - `Markdown` as the lingua fracta of the open source community
     
 ## How we will do it in this workshop
 
@@ -50,12 +55,14 @@ output:
 
 - Inspired by Kieran Healey's (associate professor in sociology) work: [Choosing your Workflow Applications](http://kieranhealy.org/files/misc/workflow-apps.pdf)
 
-- Courses for reproducable research seems to pop up everywhere (but mostly in datascience courses):
+- Some on-line courses for reproducable research:
     - Datascience course: [https://www.coursera.org/](https://www.coursera.org/)
     - Tools for Reproducible Research [http://kbroman.org/Tools4RR/](http://kbroman.org/Tools4RR/)
     
-- Shameless self-promotion: (work with Daniel Arribas-Bel)
-    - WooW-II workshop: [https://github.com/darribas/WooWii](https://github.com/darribas/WooWii); see as well REGION resource: [http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85](http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85)
+- Shameless self-promotion:
+    - With Daniel Arribel-Bel: WooW-II workshop: [https://github.com/darribas/WooWii](https://github.com/darribas/WooWii); 
+    - with Daniel Arribas-Bel: [REGION resource](http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85)
+    - with Daniel Arribas-Bel and Serge Rey: *Regional Research Frontiers* book chapter 
 
 # Workflow 
 
@@ -76,14 +83,16 @@ output:
 
 ## Why bother about a (open) workflow or tools?
 
-- Good scientific practice: *document how you have achieved your results*; this ensures
+- Good scientific practice: *document how you have achieved your results* 
 
-    - Reproducibility 
-    - Transparency
-    - Modularity
-    - Portability (across systems and users)
-    - Efficiency
-    - Self-sanity
+- A good reproducable workflow ensures
+
+    - reproducibility (duh....);
+    - transparency;
+    - modularity;
+    - portability (across systems and users);
+    - efficiency;
+    - self-sanity.
 
 ## When should I adopt a (open) reproducable workflow?
 
@@ -164,3 +173,7 @@ Only implicitly we make use of `LaTeX`, `diff`, `HTML` and `Pandoc` (all under t
     - Push paper to `Github`
     - Add `README` file with `Markdown`
     - Publish paper on `Github pages`
+    
+# Assignment 1
+
+## Install `GitHub Desktop`
