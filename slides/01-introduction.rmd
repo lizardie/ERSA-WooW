@@ -3,9 +3,9 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
+  ioslides_presentation: default
   beamer_presentation:
     slide_level: 2
-  ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
     pandoc_args:
@@ -17,11 +17,11 @@ output:
 
 # Introduction
 
-## *Why* this workshop?
+## **Why** this workshop?
 
-- In the *social sciences* few attention to what tools to use (and why they make sense)
+- In the **social sciences** few attention to what tools to use (and why they make sense)
 
-- Increasing *need* for/in openness & transparancy
+- Increasing **need** for/in openness & transparancy
 
     - from journals, universities and governments
     - increase in cooperation (over wider distances)
@@ -34,7 +34,7 @@ output:
     - there is no final, optimal, set of workflow tools
     - investment is very, very costly (in time that is)
 
-- However, being a practical workshop we do
+- However, being a *practical* workshop we do
 
     - work with a specific set of tools to
     - touch upon the concepts of markup languages, versioning and opening up.
@@ -49,7 +49,7 @@ output:
 
 - Every session start with some introductionary slides 
 
-- Then some hands-on assignments
+- Then some hands-on in-class assignments
 
 ## Related work 
 
@@ -68,18 +68,19 @@ output:
 
 ## Open?
 
-* Workflow: 
-  *Progression of steps (tasks, events, interactions) that comprise a work process, involve two or more persons, and create or add value to the organization's activities* ([BusinessDictionary](http://www.businessdictionary.com/definition/workflow.html))
+- Workflow: 
+    - *Progression of steps (tasks, events, interactions) that comprise a work process, involve two or more persons, and create or add value to the organization's activities* ([BusinessDictionary](http://www.businessdictionary.com/definition/workflow.html))
 
-* Open workflow: One that enhances *transparency*, *collaboration* and *reproducibility*
+- Open workflow:
+    - One that enhances *transparency*, *collaboration* and *reproducibility*
 
 ## Ideal Research cycle 
 
-![Research cycle](fig/ResearchCycle.gif)
+![Research cycle in theory](fig/ResearchCycle.pdf)
 
 ## Research cycle in practice
 
-![Research cycle](fig/phdcomic.png)
+![Research cycle in practice](fig/phdcomic.png)
 
 ## Why bother about a (open) workflow or tools?
 
