@@ -10,7 +10,7 @@ layout: default
 
 #### Time: 13:00-16:00
 
-#### Location: tba 
+#### Location: TC.3.02
 
 ## Schedule
 
