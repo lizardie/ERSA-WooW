@@ -8,7 +8,7 @@ layout: default
 
 ### Assignment for session Markdown (assignment 1)
 
-[Assignment 1](Assignments/Assignment1.md): 
+[Assignment 1](./Assignments/Assignment1.md): 
 
 ### Assignment for session Git (assignment 2)
 
