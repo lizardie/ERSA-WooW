@@ -2,7 +2,7 @@
 title: Version control 
 ---
 
-In this 1h. session we introduce the concepts of version control. This relates to keeping track of changes as they occur throughout the proccess or research and writing. 
+In this 1h. session we introduce the concepts of version control. This relates to keeping track of changes as they occur throughout the process or research and writing. 
 
 ### Requirements
 
