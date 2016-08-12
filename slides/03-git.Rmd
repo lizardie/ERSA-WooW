@@ -3,15 +3,16 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
+  slidy_presentation: default
   ioslides_presentation: default
-  beamer_presentation:
-    slide_level: 2
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
+  beamer_presentation:
+    slide_level: 2
 subtitle: '[`Git`]'
 ---
 
@@ -83,11 +84,10 @@ service
 
 ## `git` - New project (repository)
 
-Navigate to the folder where you want to create the new project and create the
-directory, naming it the way you prefer:
+Navigate to the folder where you want to create the new project (not ERSA-WooW!) and create the directory, naming it the way you prefer:
 
 ```
-$ cd /path/to/folder
+$ cd /path/to/new foler
 $ mkdir my_new_folder
 $ cd my_new_folder
 ```
@@ -118,11 +118,10 @@ nothing to commit (create/copy files and use "git add" to track)
 ## `git` - Work...
 
 Start, for example, with one text file. You can create it from the text editor
-of your preference, or you can create it using a command line editor, such as
-`vim`:
+of your preference, or you can create it using a command line editor, but let us open a new file in `Rstudio`, titled:
 
 ```
-$ vim nobelp_paper.txt
+nobelp_paper.md
 ```
 
 And start working:
@@ -146,18 +145,18 @@ $ git status
 # Untracked files:
 #   (use "git add <file>..." to include in what will be committed)
 #
-#	nobelp_paper.txt
+#	nobelp_paper.md
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ## `git` - ... and track your work!
 
-At this point, you want `nobelp_paper.txt` to be tracked as you work on it.
+At this point, you want `nobelp_paper.md` to be tracked as you work on it.
 This does *not* come automatically (like in Dropbox, for example), but you
 need to explicitly add the file:
 
 ```
-$ git add nobelp_paper.txt
+$ git add nobelp_paper.md
 ```
 
 Now `git` knows it has to keep an eye on the file:
@@ -174,7 +173,7 @@ $ git status
 # Changes to be committed:
 #   (use "git rm --cached <file>..." to unstage)
 #
-#	new file:   nobelp_paper.txt
+#	new file:   nobelp_paper.md
 #
 ```
 
@@ -208,7 +207,7 @@ version will be tracked. Very useful when a project has **many files**!
 ## `git` - Work, track, work, track...
 
 ```
-$ vim nobelp_paper.txt
+edit nobelp_paper.md
 ```
 
 ```
@@ -223,7 +222,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   nobelp_paper.txt
+	modified:   nobelp_paper.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
@@ -288,7 +287,7 @@ See more details about tweaking `git log` in [this link](http://www.git-scm.com/
 Current version from last one tracked (`HEAD`):
 
 ```
-$ vim nobelp_paper.txt
+nobelp_paper.md
 ```
 
 ```
@@ -298,10 +297,10 @@ The world is NOT flat at all.
 ```
 $ git diff
 
-diff --git a/nobelp_paper.txt b/nobelp_paper.txt
+diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 5a35641..3215244 100644
---- a/nobelp_paper.txt
-+++ b/nobelp_paper.txt
+--- a/nobelp_paper.md
++++ b/nobelp_paper.md
 @@ -1 +1 @@
 -The world is NOT flat.
 +The world is NOT flat at all.
@@ -316,12 +315,12 @@ $ git commit -am "Reaffirming myself about Earth's non-flatness"
 ```
 
 ```
-$ git diff HEAD~2 nobelp_paper.txt
+$ git diff HEAD~2 nobelp_paper.md
 
-diff --git a/nobelp_paper.txt b/nobelp_paper.txt
+diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..3215244 100644
---- a/nobelp_paper.txt
-+++ b/nobelp_paper.txt
+--- a/nobelp_paper.md
++++ b/nobelp_paper.md
 @@ -1 +1 @@
 -The world is flat.
 +The world is NOT flat at all.
@@ -348,12 +347,12 @@ index 3fa4573..3215244 100644
 Or compare two previous versions:
 
 ```
-$ git diff 6d119ff a643fa0 nobelp_paper.txt
+$ git diff 6d119ff a643fa0 nobelp_paper.md
 
-diff --git a/nobelp_paper.txt b/nobelp_paper.txt
+diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..5a35641 100644
---- a/nobelp_paper.txt
-+++ b/nobelp_paper.txt
+--- a/nobelp_paper.md
++++ b/nobelp_paper.md
 @@ -1 +1 @@
 -The world is flat.
 +The world is NOT flat.
@@ -364,19 +363,19 @@ index 3fa4573..5a35641 100644
 Suppose we delete the file by accident:
 
 ```
-$ rm nobelp_paper.txt
+$ rm nobelp_paper.md
 ```
 
 Bringing the last version back is straightforward:
 
 ```
-$ git checkout HEAD nobelp_paper.txt
+$ git checkout HEAD nobelp_paper.md
 ```
 
 Also works if you decide to go back to a previous version of the file:
 
 ```
-$ git checkout HEAD~2 nobelp_paper.txt
+$ git checkout HEAD~2 nobelp_paper.md
 ```
 
 ## `git` - Restore older version (cnt.)
@@ -390,7 +389,7 @@ On branch master
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
-	modified:   nobelp_paper.txt
+	modified:   nobelp_paper.md
 
 ```
 
@@ -412,7 +411,7 @@ sections of a paper split into different files makes going back and forth in tim
 
 * Create a new file with some text and include in the tracking.
 * Make a change in the file and commit it.
-* Bring the project to a state where `nobelp_paper.txt` is in the initial
+* Bring the project to a state where `nobelp_paper.md` is in the initial
   version and the new file is at the latest.
 
 ## Exercise (suggested) result
