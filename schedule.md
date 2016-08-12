@@ -6,11 +6,11 @@ layout: default
 
 ## Details
 
-#### Date: Tuesday August 23, 2016
+- Date: Tuesday August 23, 2016
 
-#### Time: 13:00-16:00
+- Time: 13:00-16:00
 
-#### Location: TC.3.02
+- Location: TC.3.02
 
 ## Schedule
 
