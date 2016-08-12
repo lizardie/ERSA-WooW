@@ -57,4 +57,4 @@ Tuesday, August 23, 2016 : 13:00 - 16:00
 
 #### Where
 
-Vienna (for exact location see conference website)
+Vienna room TC.3.02
