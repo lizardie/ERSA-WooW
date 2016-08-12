@@ -3,6 +3,7 @@ title: "Markup languages---Power at your fingertips"
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
+  slidy_presentation: default
   ioslides_presentation: default
   beamer_presentation:
     slide_level: 2
@@ -54,16 +55,16 @@ This entails:
 
     + `LaTeX` is for paper (aka dead trees)
     + `Markdown` is for `HTML` (blogs, wikipedia and so)
-    + but sneakily uses some Latex when needed
+    + but sneakily uses some LaTeX when needed
 3. Focus on text
 4. Nowadays:
 
-    + ``easily'' change it in html or pdf (via Latex)---even in Word if needed
+    + ``easily'' change it in `html` or `pdf` (via LaTeX)---even in Word's `.docx` if needed (but error prone)
     + can be extended with code or---even better---its results
 
 ## Small diversion
 
-> Question 1: Why and when do we make use of pdf's and not html?
+> Question 1: Why and when do we make use of `pdf`'s and not `html`?
 
 > Question 2: Is one always better than the other?
 
@@ -104,14 +105,24 @@ Ordered List
 ## Language syntax (cont.)
 
 Links:
+[Cheatsheet](http://assemble.io/docs/Cheatsheet-Markdown.html)
 ```markdown
-http://assemble.io/docs/Cheatsheet-Markdown.html
 [Cheatsheet](http://assemble.io/docs/Cheatsheet-Markdown.html)
 ```
 Images:
 ```markdown
 ![alt text](http://example.com/logo.png)
 ![alt text](figures/img.png)
+```
+footnotes:
+
+As it is well known[^fn1]
+
+[^fn1]: You know nothing, John Snow
+
+```markdown
+As it is well known[^fn1]
+[^fn1]: You know nothing, John Snow
 ```
 
 ## Language syntax (cont.)
@@ -136,9 +147,9 @@ print s
 
 ## Language syntax (cont.)
 
-To embed mathematics 'just' use [Latex notation](https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf):
+To embed mathematics 'just' use LaTeX ([see **here** for list of symbols](https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf) and note that LateX should be installed on your computer):
 
-```Latex
+```markdown
 $$e=mc^2$$
 ```
 
@@ -187,9 +198,15 @@ So how do we glue everything together and produce wonderful htmls and pdfs out o
 
 ## The assignment
 
-- if not already done do: 
-  - ```git clone https://github.com/Thdegraaff/ERSA-WooW```
+- if not already done do:
 
-- go to ```/Assignments/Assignment1```
+    - ```git clone https://github.com/Thdegraaff/ERSA-WooW```
 
-- and transform `DraftPaper.txt` *as much as possible* in `RStudio`
+- go to the folder ```./Assignments/```
+
+- Open `Assignment1.md` in `RStudio`
+
+- and transform `Assignment1.md` *as much as possible* in `RStudio`: 
+
+    - This means adding Markdown tags to the basic text
+    - The file [HowToWriteAShinyPaperLimited](../doc/HowToWriteAShinyPaperLimited.pdf) provides a `LaTeX` example how the format sort of should be.
