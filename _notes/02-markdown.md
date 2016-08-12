@@ -14,7 +14,7 @@ Although the second one, pandoc, is not completely necessary (it is under the ho
 
 For this session, we basically need only one tool: `RStudio`.  
 
-For the assignment we will partly replicate [this paper](../doc/HowToWriteAShinyPaper.pdf). The basic (unstructured) document for the assignment is [here](../Assignments/Assignment1.zip).
+For the assignment we will partly replicate [this paper](../doc/HowToWriteAShinyPaper.pdf). The basic (unstructured) document for the assignment is [here](../Assignments/Assignment1.zip) (in .zip format).
 
 ### Outcomes
 

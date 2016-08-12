@@ -28,7 +28,7 @@ After this session you should:
 
 ### References
 
-Reproducability :
+##### Reproducability:
 
 * [Choosing your workflows](http://kieranhealy.org/files/misc/workflow-apps.pdf): Great paper that inspired us deeply
 * [Reproducible Research with R and RStudio](https://github.com/christophergandrud/Rep-Res-Book): Reproduce your own book!
