@@ -10,7 +10,7 @@ In the second part we lay out the road-map for the rest of the workshop. Most im
 2. `Git`;
 3. and`GitHub`
 
-We are aware that using a particular data analysis tool is costly in terms of time investment and is ideosyncratic in terms of preferences and needs. Therefore, we strongly support the underlying concept and not so much specific tools or applications. However, in this workshop we decided to make use of the  `RStudio` application for two main reasons: (*i*) it works the best **out of the box** for *our* purposes and (*ii*) at the moment most researchers probably work with this combination for reproducability (at least it gets the biggest buzz...)
+Note that We are aware that using a particular data analysis tool is costly in terms of time investment and is ideosyncratic in terms of preferences and needs. Therefore, we strongly support the underlying concepts and not so much specific tools or applications. However, in this workshop we decided to make use of the  `RStudio` application for two main reasons: (*i*) it works the best **out of the box** for *our* purposes and (*ii*) at the moment most researchers probably work with this combination for reproducability (at least it gets the biggest buzz...)
 
 ### Outcomes
 
