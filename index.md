@@ -37,7 +37,7 @@ This workshop includes a hands-on overview of specific tools that have been desi
 
 In more detail, the workshop is structured as follows:
 
-1. Introduction to reproducibility and open science workflow principles (20 mins.)
+1. Introduction to reproducibility and open science workflow principles (30 mins.)
 2. `Markdown` language (45 mins.)
 3. Principles behind `Git` and workflow examples (60 mins.)
 4. Publication of your materials on the open repository `GitHub` (45. mins).
