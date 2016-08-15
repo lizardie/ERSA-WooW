@@ -3,17 +3,18 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
+  slidy_presentation: default
   ioslides_presentation:
     fig_height: 5
-  beamer_presentation:
-    fig_width: 3
-    slide_level: 2
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
+  beamer_presentation:
+    fig_width: 3
+    slide_level: 2
 subtitle: '[`GitHub`]'
 ---
 
@@ -40,21 +41,33 @@ knitr::include_graphics("fig/Octocat.png")
 + Cooperate with others using `Git` and `GitHub`
 + Timestamp your work 
 + `Github` can host static webpages (in combination with, e.g., Jekyll)
-    - In fact, all workshop materials and website is just one repository [ERSA-WooW](https://github.com/Thdegraaff/ERSA-WooW)
+    - In fact, all these workshop materials and this website is just one repository on GitHub [ERSA-WooW](https://github.com/Thdegraaff/ERSA-WooW)
 
 ## How to publish on `GitHub`?
 
 + You **pull** material from `GitHub` and you **push** material to `Github`
 + Typical workflow:
-    0. *Pull* changes from `Github`
-    1. Work on some part
-    2. Commit your changes to your *local* repository
-    3. Push all changes to `Github`
+    1. *Pull* changes from `Github`
+    2. Work on some part
+    3. Commit your changes to your *local* repository
+    4. Push all changes to `Github`
         - Possibly solve conflicts when cooperating 
 
-## Working with `GitHub` desktop?
+With `GitHub` Desktop push/pull is replace by sync (initial one is publish)
 
-# The assingment
+## Working with `GitHub` desktop
+
+- Assingment 1: 
+    1. Open ERSA-WooW in `GitHub` desktop
+    2. Commit changes of your Markdown paper to `GitHub` desktop
+    3. Sync your Markdown paper to your `GitHub` account
+    
+- Assignment 2: 
+    1. Open GreatPaper in `GitHub` desktop 
+    2. Are there any changes to commit?
+    3. Go to your Github account
+    4. Add a README.md file
+    5. Create a website from your GreatPaper project
 
 
 

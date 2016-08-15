@@ -27,7 +27,7 @@ Thomas De Graaff
 <ul>
 <li>Keep track of changes in a project <em>as they occur</em></li>
 <li>Document the changes</li>
-<li>Archive the history in a way that allows to easily roll back</li>
+<li>Archive the history in a way that allows to <code>easily</code> roll back</li>
 <li>Tell differences with other versions (collaboration) and be able to merge them</li>
 </ul>
 </div><div id="version-control-why" class="slide section level2">
@@ -59,7 +59,7 @@ Thomas De Graaff
 <li><a href="http://software-carpentry.org/v5/novice/git/03-conflict.html">Conflicts</a> in <code>git</code></li>
 </ul>
 </div><div id="why-not-e.g.-dropbox" class="slide section level2">
-<h1>Why not e.g., <code>Dropbox</code>?</h1>
+<h1>Why not, e.g., <code>Dropbox</code>?</h1>
 <p><code>Dropbox</code> allows as well for</p>
 <ul>
 <li>collaboration (if not only with yourself)</li>
@@ -76,16 +76,21 @@ Thomas De Graaff
 </ul>
 </div><div id="git---requirements-setup" class="slide section level2">
 <h1><code>git</code> - Requirements &amp; Setup</h1>
-<p>Assuming you have <code>git</code> installed:</p>
+<ul>
+<li><p>Open terminal (<code>Tools and options</code> &gt; <code>Open in Git Shell</code>)</p></li>
+<li><p>Assuming you have <code>git</code> installed:</p></li>
+</ul>
 <pre><code>$ git config --global user.name &quot;Your Name&quot;
 $ git config --global user.email &quot;your@email.org&quot;</code></pre>
-<p>These are for attribution purposes only, it does not sign you up for any service</p>
+<ul>
+<li>These are for attribution purposes only, it does not sign you up for any service</li>
+</ul>
 </div><div id="git---new-project-repository" class="slide section level2">
 <h1><code>git</code> - New project (repository)</h1>
 <p>Navigate to the folder where you want to create the new project (not ERSA-WooW!) and create the directory, naming it the way you prefer:</p>
-<pre><code>$ cd /path/to/new foler
-$ mkdir my_new_folder
-$ cd my_new_folder</code></pre>
+<pre><code>$ cd ..
+$ mkdir GreatPaper
+$ cd GreatPaper</code></pre>
 <p>Then start tracking:</p>
 <pre><code>$ git init</code></pre>
 </div><div id="git---new-project-repository-cnt." class="slide section level2">
@@ -180,29 +185,31 @@ no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&q
 <h1><code>git</code> - Examine log</h1>
 <pre><code>$ git log
 
-commit a643fa0ca03291793cb432d799defd0f496b5c9a
-Author: Dani Arribas-Bel &lt;daniel.arribas.bel@gmail.com&gt;
-Date:   Thu Aug 28 10:50:01 2014 -0500
+commit b4eeaafcff25d9e6464adbd5083c0202ccce7d90
+Author: Thomas de Graaff &lt;t.de.graaff@vu.nl&gt;
+Date:   Mon Aug 15 12:09:39 2016 +0200
 
     Correcting view about Earth
 
-commit 6d119ff4a319650bfef06d279b000a56f5fe7759
-Author: Dani Arribas-Bel &lt;daniel.arribas.bel@gmail.com&gt;
-Date:   Thu Aug 28 10:36:36 2014 -0500
+commit 7505fa61d973083d6d33791fc38ad57291c55a92
+Author: Thomas de Graaff &lt;t.de.graaff@vu.nl&gt;
+Date:   Mon Aug 15 12:08:37 2016 +0200
 
-    Current state of knowledge about Earth</code></pre>
+    Current state of knowledge about Earth
+</code></pre>
 </div><div id="git---examine-log-cnt." class="slide section level2">
 <h1><code>git</code> - Examine log (cnt.)</h1>
 <p>Or a more compressed view…</p>
 <pre><code>$ git log --pretty=oneline
 
-a643fa0ca03291793cb432d799defd0f496b5c9a Correcting view about Earth
-6d119ff4a319650bfef06d279b000a56f5fe7759 Current state of knowledge about Earth</code></pre>
+b4eeaafcff25d9e6464adbd5083c0202ccce7d90 Correcting view about Earth
+7505fa61d973083d6d33791fc38ad57291c55a92 Current state of knowledge about Earth
+</code></pre>
 <p>Or more detailed:</p>
 <pre><code>$ git log --pretty=format:&quot;%h - %a, %ar : %s&quot;
 
-a643fa0 - %a, 17 minutes ago : Correcting view about Earth
-6d119ff - %a, 30 minutes ago : Current state of knowledge about Earth</code></pre>
+b4eeaaf - %a,  4 minutes ago : Correcting view about Earth
+7505fa6 - %a,  5 minutes ago : Current state of knowledge about Earth</code></pre>
 <p>See more details about tweaking <code>git log</code> in <a href="http://www.git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History">this link</a>.</p>
 </div><div id="git---compare-versions" class="slide section level2">
 <h1><code>git</code> - Compare versions</h1>
@@ -227,16 +234,16 @@ index 5a35641..3215244 100644
 diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..3215244 100644
 --- a/nobelp_paper.md
-+++ b/nobelp_paper.md
++++ b/nobelp_paper.mdgit 
 @@ -1 +1 @@
 -The world is flat.
 +The world is NOT flat at all.</code></pre>
 </div><div id="git---compare-versions-ctd." class="slide section level2">
 <h1><code>git</code> - Compare versions (ctd.)</h1>
 <p>Or compare with a specific revision (check log for that):</p>
-<pre><code>$ git diff 6d119ff nobelp_paper.txt
+<pre><code>$ git diff 7505fa6  nobelp_paper.md
 
-diff --git a/nobelp_paper.txt b/nobelp_paper.txt
+diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..3215244 100644
 --- a/nobelp_paper.txt
 +++ b/nobelp_paper.txt
@@ -246,7 +253,7 @@ index 3fa4573..3215244 100644
 </div><div id="git---compare-versions-cnt.-1" class="slide section level2">
 <h1><code>git</code> - Compare versions (cnt.)</h1>
 <p>Or compare two previous versions:</p>
-<pre><code>$ git diff 6d119ff a643fa0 nobelp_paper.md
+<pre><code>$ git diff 7505fa6 b4eeaaf nobelp_paper.md
 
 diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..5a35641 100644
@@ -292,23 +299,25 @@ Changes to be committed:
 </ul>
 </div><div id="exercise-suggested-result" class="slide section level2">
 <h1>Exercise (suggested) result</h1>
-<pre><code>$ vim corollary.txt</code></pre>
+<p>With <code>RStudio</code></p>
+<pre><code>corollary.md</code></pre>
 <pre><code>I am not really sure about Earth's flatness.</code></pre>
-<pre><code>$ git add corollary.txt
+<pre><code>$ git add corollary.md
 $ git commit -am &quot;Adding corollary&quot;</code></pre>
-<pre><code>$ vim corollary.txt</code></pre>
+<p>With <code>RStudio</code></p>
+<pre><code>corollary.md</code></pre>
 <pre><code>I am not really sure about Earth's flatness, it depends.</code></pre>
 <pre><code>$ git commit -am &quot;Introducing uncertainty to corollary&quot;</code></pre>
 </div><div id="exercise-suggested-result-cnt." class="slide section level2">
 <h1>Exercise (suggested) result (cnt.)</h1>
-<pre><code>$ git log --pretty=oneline nobelp_paper.txt
+<pre><code>$ git log --pretty=oneline nobelp_paper.md
 
 25acad2069d72947e5aa2e21ddfe4509205ded88 Going back to original ideas
 cfccca975f95ba6588ce07360f4507d5a796b20a Reaffirming myself about Earth's non-flatness
 a643fa0ca03291793cb432d799defd0f496b5c9a Correcting view about Earth
 6d119ff4a319650bfef06d279b000a56f5fe7759 Current state of knowledge about Eart
 
-$ git checkout 6d119ff4a319650bfef06d279b000a56f5fe7759 nobelp_paper.txt
+$ git checkout 6d119ff4a319650bfef06d279b000a56f5fe7759 nobelp_paper.md
 $ git commit -am &quot;Completing exercise&quot;</code></pre>
 </div><div id="git---get-selective-on-a-project" class="slide section level2">
 <h1><code>git</code> - Get selective on a project</h1>
@@ -316,27 +325,26 @@ $ git commit -am &quot;Completing exercise&quot;</code></pre>
 <li>A project might have several files (we’ve seen how to deal with that)</li>
 <li>Some of those you might prefer to exclude (or not care to include)</li>
 <li>By default they will not be tracked</li>
-<li>You can create a <code>.gitignore</code> file in the root folder listing files to be explicitly excluded from tracking</li>
+<li><p>You can create a <code>.gitignore</code> file in the root folder listing files to be explicitly excluded from tracking</p></li>
+<li><p>With <code>RStudio</code> create <code>.gitignore</code> file</p></li>
 </ul>
-<pre><code>$ vim .gitignore
-$ git add .gitignore
+<pre><code>$ git add .gitignore
 $ git commit -m &quot;Adding ignore file&quot;</code></pre>
 </div><div id="git---get-selective-on-a-project-cnt." class="slide section level2">
 <h1><code>git</code> - Get selective on a project (cnt.)</h1>
 <pre><code>*.aux</code></pre>
-<pre><code>$ vim something.aux</code></pre>
 <pre><code>$ git status
 
 On branch master
 nothing to commit, working directory clean</code></pre>
-</div><div id="credits" class="slide section level2">
-<h1>credits</h1>
-<div class="figure">
-<img src="data:image/png;base64,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" alt="FOSTER" />
-<p class="caption">FOSTER</p>
-</div>
-<p>Based on content by <a href="http://darribas.org">Dani Arribas-Bel</a> and <a href="http://www.thomasdegraaff.net/">Thomas De Graaff</a>, licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p>For this session, we have borrowed important amounts of inspiration and material from <strong>Software Carpentry</strong>’s <a href="http://software-carpentry.org/v5/novice/git/index.html">session on git</a> and the freely available book <a href="http://www.git-scm.com/book/">Pro Git</a></p>
+</div><div id="unnessarily-complex" class="slide section level2">
+<h1>Unnessarily complex?</h1>
+<p>Go to <code>Github Desktop</code> and</p>
+<ul>
+<li>see your changes in your copy of ERSA-WooW</li>
+<li>commit those changes with a message (done the Markdown assignment!)</li>
+<li>push the <strong>Sync</strong> thingie</li>
+</ul>
 </div>
 
   <!-- dynamically load mathjax for compatibility with self-contained -->

@@ -24,7 +24,7 @@ subtitle: '[`Git`]'
 
 * Keep track of changes in a project *as they occur*
 * Document the changes
-* Archive the history in a way that allows to easily roll back 
+* Archive the history in a way that allows to `easily` roll back 
 * Tell differences with other versions (collaboration) and be able to merge
   them
 
@@ -56,7 +56,7 @@ Not today (but you should check it out):
 * [Collaboration](http://software-carpentry.org/v5/novice/git/02-collab.html) with `git`
 * [Conflicts](http://software-carpentry.org/v5/novice/git/03-conflict.html) in `git`
 
-## Why not e.g., `Dropbox`? 
+## Why not, e.g., `Dropbox`? 
 
 `Dropbox` allows as well for
 
@@ -72,14 +72,16 @@ Main differences
 
 ## `git` - Requirements & Setup
 
-Assuming you have `git` installed:
+- Open terminal (`Tools and options` > `Open in Git Shell`)
+
+- Assuming you have `git` installed:
 
 ```
 $ git config --global user.name "Your Name"
 $ git config --global user.email "your@email.org"
 ```
 
-These are for attribution purposes only, it does not sign you up for any
+- These are for attribution purposes only, it does not sign you up for any
 service
 
 ## `git` - New project (repository)
@@ -87,9 +89,9 @@ service
 Navigate to the folder where you want to create the new project (not ERSA-WooW!) and create the directory, naming it the way you prefer:
 
 ```
-$ cd /path/to/new foler
-$ mkdir my_new_folder
-$ cd my_new_folder
+$ cd ..
+$ mkdir GreatPaper
+$ cd GreatPaper
 ```
 
 Then start tracking:
@@ -247,17 +249,18 @@ project.
 ```
 $ git log
 
-commit a643fa0ca03291793cb432d799defd0f496b5c9a
-Author: Dani Arribas-Bel <daniel.arribas.bel@gmail.com>
-Date:   Thu Aug 28 10:50:01 2014 -0500
+commit b4eeaafcff25d9e6464adbd5083c0202ccce7d90
+Author: Thomas de Graaff <t.de.graaff@vu.nl>
+Date:   Mon Aug 15 12:09:39 2016 +0200
 
     Correcting view about Earth
 
-commit 6d119ff4a319650bfef06d279b000a56f5fe7759
-Author: Dani Arribas-Bel <daniel.arribas.bel@gmail.com>
-Date:   Thu Aug 28 10:36:36 2014 -0500
+commit 7505fa61d973083d6d33791fc38ad57291c55a92
+Author: Thomas de Graaff <t.de.graaff@vu.nl>
+Date:   Mon Aug 15 12:08:37 2016 +0200
 
     Current state of knowledge about Earth
+
 ```
 
 ## `git` - Examine log (cnt.)
@@ -267,8 +270,9 @@ Or a more compressed view...
 ```
 $ git log --pretty=oneline
 
-a643fa0ca03291793cb432d799defd0f496b5c9a Correcting view about Earth
-6d119ff4a319650bfef06d279b000a56f5fe7759 Current state of knowledge about Earth
+b4eeaafcff25d9e6464adbd5083c0202ccce7d90 Correcting view about Earth
+7505fa61d973083d6d33791fc38ad57291c55a92 Current state of knowledge about Earth
+
 ```
 
 Or more detailed:
@@ -276,8 +280,8 @@ Or more detailed:
 ```
 $ git log --pretty=format:"%h - %a, %ar : %s"
 
-a643fa0 - %a, 17 minutes ago : Correcting view about Earth
-6d119ff - %a, 30 minutes ago : Current state of knowledge about Earth
+b4eeaaf - %a,  4 minutes ago : Correcting view about Earth
+7505fa6 - %a,  5 minutes ago : Current state of knowledge about Earth
 ```
 
 See more details about tweaking `git log` in [this link](http://www.git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History).
@@ -320,7 +324,7 @@ $ git diff HEAD~2 nobelp_paper.md
 diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..3215244 100644
 --- a/nobelp_paper.md
-+++ b/nobelp_paper.md
++++ b/nobelp_paper.mdgit 
 @@ -1 +1 @@
 -The world is flat.
 +The world is NOT flat at all.
@@ -331,9 +335,9 @@ index 3fa4573..3215244 100644
 Or compare with a specific revision (check log for that):
 
 ```
-$ git diff 6d119ff nobelp_paper.txt
+$ git diff 7505fa6  nobelp_paper.md
 
-diff --git a/nobelp_paper.txt b/nobelp_paper.txt
+diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..3215244 100644
 --- a/nobelp_paper.txt
 +++ b/nobelp_paper.txt
@@ -347,7 +351,7 @@ index 3fa4573..3215244 100644
 Or compare two previous versions:
 
 ```
-$ git diff 6d119ff a643fa0 nobelp_paper.md
+$ git diff 7505fa6 b4eeaaf nobelp_paper.md
 
 diff --git a/nobelp_paper.md b/nobelp_paper.md
 index 3fa4573..5a35641 100644
@@ -416,8 +420,9 @@ sections of a paper split into different files makes going back and forth in tim
 
 ## Exercise (suggested) result
 
+With `RStudio`
 ```
-$ vim corollary.txt
+corollary.md
 ```
 
 ```
@@ -425,12 +430,13 @@ I am not really sure about Earth's flatness.
 ```
 
 ```
-$ git add corollary.txt
+$ git add corollary.md
 $ git commit -am "Adding corollary"
 ```
 
+With `RStudio`
 ```
-$ vim corollary.txt
+corollary.md
 ```
 
 ```
@@ -441,15 +447,16 @@ I am not really sure about Earth's flatness, it depends.
 $ git commit -am "Introducing uncertainty to corollary"
 ```
 ## Exercise (suggested) result (cnt.)
+
 ```
-$ git log --pretty=oneline nobelp_paper.txt
+$ git log --pretty=oneline nobelp_paper.md
 
 25acad2069d72947e5aa2e21ddfe4509205ded88 Going back to original ideas
 cfccca975f95ba6588ce07360f4507d5a796b20a Reaffirming myself about Earth's non-flatness
 a643fa0ca03291793cb432d799defd0f496b5c9a Correcting view about Earth
 6d119ff4a319650bfef06d279b000a56f5fe7759 Current state of knowledge about Eart
 
-$ git checkout 6d119ff4a319650bfef06d279b000a56f5fe7759 nobelp_paper.txt
+$ git checkout 6d119ff4a319650bfef06d279b000a56f5fe7759 nobelp_paper.md
 $ git commit -am "Completing exercise"
 ```
 
@@ -461,8 +468,9 @@ $ git commit -am "Completing exercise"
 * You can create a `.gitignore` file in the root folder listing files to be
   explicitly excluded from tracking
 
+- With `RStudio` create `.gitignore` file 
+
 ```
-$ vim .gitignore
 $ git add .gitignore
 $ git commit -m "Adding ignore file"
 ```
@@ -473,22 +481,17 @@ $ git commit -m "Adding ignore file"
 ```
 
 ```
-$ vim something.aux
-```
-
-```
 $ git status
 
 On branch master
 nothing to commit, working directory clean
 ```
 
-## credits 
+## Unnessarily complex? 
 
-![FOSTER](fig/fosterlogo.png)
+Go to `Github Desktop` and
 
-Based on content by [Dani Arribas-Bel](http://darribas.org) and [Thomas De Graaff](http://www.thomasdegraaff.net/),
-licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
-
-For this session, we have borrowed important amounts of inspiration and material from **Software Carpentry**'s [session on git](http://software-carpentry.org/v5/novice/git/index.html) and the freely available book [Pro Git](http://www.git-scm.com/book/)
+* see your changes in your copy of ERSA-WooW
+* commit those changes with a message (done the Markdown assignment!)
+* push the **Sync** thingie
 
