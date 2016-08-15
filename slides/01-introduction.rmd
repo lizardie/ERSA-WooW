@@ -3,16 +3,16 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
+  slidy_presentation: default
   ioslides_presentation: default
-  beamer_presentation:
-    slide_level: 2
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
-  slidy_presentation: default
+  beamer_presentation:
+    slide_level: 2
 ---
 
 # Introduction
@@ -30,7 +30,7 @@ output:
 
 ## Goals of this workshop 
 
-- To make you **familiar** with some concepts and tool, being aware of the facts that
+- To make you **familiar** with some concepts and tools, being aware of the facts that
     - there is no final, optimal, set of workflow tools
     - investment is very, very costly (in time that is)
 
@@ -38,13 +38,13 @@ output:
 
     - work with a specific set of tools to
     - touch upon the concepts of markup languages, versioning and opening up.
-    
+
 - Specifically, we use
 
-    - `Git` as a versioning system,
-    - `Github` to make our materials/ideas public, and 
-    - `Markdown` as the lingua fracta of the open source community
-    
+    - `Markdown` to format a piece of text intp a paper,
+    - `Git` to keep track of what we have done,
+    - `Github` to make our material public and share our ideas.
+
 ## How we will do it in this workshop
 
 - Every session start with some introductionary slides 
@@ -62,7 +62,7 @@ output:
 - Shameless self-promotion:
     - With Daniel Arribel-Bel: WooW-II workshop: [https://github.com/darribas/WooWii](https://github.com/darribas/WooWii); 
     - with Daniel Arribas-Bel: [REGION resource](http://openjournals.wu.ac.at/ojs/index.php/region/article/view/85)
-    - with Daniel Arribas-Bel and Serge Rey: *Regional Research Frontiers* book chapter 
+    - with Daniel Arribas-Bel and Serge Rey: *Regional Research Frontiers* forthcoming book chapter 
 
 # Workflow 
 
@@ -177,4 +177,7 @@ Only implicitly we make use of `LaTeX`, `diff`, `HTML` and `Pandoc` (all under t
     
 # Assignment 1
 
-## Install `GitHub Desktop`
+## Get `Github` account and Install `GitHub Desktop`
+
+1.  Go to [https://github.com/join  ](https://github.com/join) and create account
+2.  Go to [https://desktop.github.com/](https://desktop.github.com/) and install GitHub Desktop (already done on these computers)
