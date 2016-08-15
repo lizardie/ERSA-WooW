@@ -1,12 +1,13 @@
 ---
-title: "Markup languages---Power at your fingertips"
+title: "Markdown"
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
-  slidy_presentation: default
-  ioslides_presentation: default
   beamer_presentation:
     slide_level: 2
+  ioslides_presentation: default
+  slidy_presentation: default
+subtitle: Power at your fingertips
 ---
 
 # Introduction
@@ -51,7 +52,7 @@ This entails:
 ## Why markdown?
 
 1. Easy to learn [http://daringfireball.net/projects/markdown/](http://daringfireball.net/projects/markdown/)
-2. Much less notation than Latex. Originally, 
+2. Much less notation than LaTeX. Originally, 
 
     + `LaTeX` is for paper (aka dead trees)
     + `Markdown` is for `HTML` (blogs, wikipedia and so)
@@ -59,8 +60,8 @@ This entails:
 3. Focus on text
 4. Nowadays:
 
-    + ``easily'' change it in `html` or `pdf` (via LaTeX)---even in Word's `.docx` if needed (but error prone)
-    + can be extended with code or---even better---its results
+    + "easily" change it in `html` or `pdf` (via LaTeX)---even in Word's `.docx` if needed (but error prone)
+    + can be extended with code (verbatim) or---even better---its results
 
 ## Small diversion
 
@@ -147,7 +148,7 @@ print s
 
 ## Language syntax (cont.)
 
-To embed mathematics 'just' use LaTeX ([see **here** for list of symbols](https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf) and note that LateX should be installed on your computer):
+To embed mathematics 'just' use LaTeX ([see **here** for list of symbols](https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf) and note that LaTeX should be installed on your computer):
 
 ```markdown
 $$e=mc^2$$
@@ -180,7 +181,7 @@ In economics it is well kwown that: $\frac{d x}{d y} = -\frac{
 
 ## The swiss knife of formats
 
-So how do we glue everything together and produce wonderful htmls and pdfs out of thin air? With **[pandoc](http://johnmacfarlane.net/pandoc/)**
+So how do we glue everything together and produce wonderful `html`s and `pdf`s out of thin air? With **[pandoc](http://johnmacfarlane.net/pandoc/)**
 
 + Pandoc can convert from (not extensive):
 

@@ -7,7 +7,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="author" content="Thomas de Graaff" />
   <meta name="date" content="2016-08-23" />
-  <title>Markup languages—Power at your fingertips</title>
+  <title>Markdown</title>
   <style type="text/css">code{white-space: pre;}</style>
   <style type="text/css">
 div.sourceCode { overflow-x: auto; }
@@ -51,7 +51,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Markup languages—Power at your fingertips</h1>
+  <h1 class="title">Markdown</h1>
+  <h1 class="subtitle">Power at your fingertips</h1>
   <p class="author">
 Thomas de Graaff
   </p>
@@ -106,7 +107,7 @@ Thomas de Graaff
 <h1>Why markdown?</h1>
 <ol style="list-style-type: decimal">
 <li>Easy to learn <a href="http://daringfireball.net/projects/markdown/" class="uri">http://daringfireball.net/projects/markdown/</a></li>
-<li><p>Much less notation than Latex. Originally,</p>
+<li><p>Much less notation than LaTeX. Originally,</p>
 <ul>
 <li><code>LaTeX</code> is for paper (aka dead trees)</li>
 <li><code>Markdown</code> is for <code>HTML</code> (blogs, wikipedia and so)</li>
@@ -115,8 +116,8 @@ Thomas de Graaff
 <li>Focus on text</li>
 <li><p>Nowadays:</p>
 <ul>
-<li>`<code>easily'' change it in</code>html<code>or</code>pdf<code>(via LaTeX)---even in Word's</code>.docx` if needed (but error prone)</li>
-<li>can be extended with code or—even better—its results</li>
+<li>“easily” change it in <code>html</code> or <code>pdf</code> (via LaTeX)—even in Word’s <code>.docx</code> if needed (but error prone)</li>
+<li>can be extended with code (verbatim) or—even better—its results</li>
 </ul></li>
 </ol>
 </div><div id="small-diversion" class="slide section level2">
@@ -174,7 +175,7 @@ _italic_ __bold__</code></pre></div>
 <span class="bu">print</span> s</code></pre></div>
 </div><div id="language-syntax-cont.-3" class="slide section level2">
 <h1>Language syntax (cont.)</h1>
-<p>To embed mathematics ‘just’ use LaTeX (<a href="https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf">see <strong>here</strong> for list of symbols</a> and note that LateX should be installed on your computer):</p>
+<p>To embed mathematics ‘just’ use LaTeX (<a href="https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf">see <strong>here</strong> for list of symbols</a> and note that LaTeX should be installed on your computer):</p>
 <div class="sourceCode"><pre class="sourceCode markdown"><code class="sourceCode markdown">$$e=mc^2$$</code></pre></div>
 <p>which surprisingly looks as excel type of formulae and renders as:</p>
 <p><span class="math display">\[e=mc^2\]</span></p>
@@ -190,7 +191,7 @@ $\frac{d x}{d y} = -\frac{
 </div>
 <div id="pandoc" class="titleslide slide section level1"><h1>Pandoc</h1></div><div id="the-swiss-knife-of-formats" class="slide section level2">
 <h1>The swiss knife of formats</h1>
-<p>So how do we glue everything together and produce wonderful htmls and pdfs out of thin air? With <strong><a href="http://johnmacfarlane.net/pandoc/">pandoc</a></strong></p>
+<p>So how do we glue everything together and produce wonderful <code>html</code>s and <code>pdf</code>s out of thin air? With <strong><a href="http://johnmacfarlane.net/pandoc/">pandoc</a></strong></p>
 <ul>
 <li><p>Pandoc can convert from (not extensive):</p>
 <ul>
