@@ -3,7 +3,9 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
-  slidy_presentation: default
+  beamer_presentation:
+    fig_width: 3
+    slide_level: 2
   ioslides_presentation:
     fig_height: 5
   revealjs_presentation:
@@ -12,9 +14,7 @@ output:
     - --css
     - fig/journal.css
     transition: linear
-  beamer_presentation:
-    fig_width: 3
-    slide_level: 2
+  slidy_presentation: default
 subtitle: '[`GitHub`]'
 ---
 
@@ -55,19 +55,22 @@ knitr::include_graphics("fig/Octocat.png")
 
 With `GitHub` Desktop push/pull is replace by sync (initial one is publish)
 
-## Working with `GitHub` desktop
+# Assignments: Working with `GitHub` and `GitHub` desktop
 
-- Assingment 1: 
-    1. Open ERSA-WooW in `GitHub` desktop
-    2. Commit changes of your Markdown paper to `GitHub` desktop
-    3. Sync your Markdown paper to your `GitHub` account
+## Assingment 1: 
+1. Open ERSA-WooW in `GitHub` desktop
+2. Commit changes of your Markdown paper to `GitHub` desktop
+3. Sync your Markdown paper to your `GitHub` account
     
-- Assignment 2: 
-    1. Open GreatPaper in `GitHub` desktop 
-    2. Are there any changes to commit?
-    3. Go to your Github account
-    4. Add a README.md file
-    5. Create a website from your GreatPaper project
+## Assignment 2: 
+1. Create new project folder `MyPaper`
+2. Copy the `html` result of the `Markdown` assignment in `MyPaper`
+3. Rename `Assingment1.html` in `index.html`
+4. Initialise a `Git` repository in `Github` desktop (with `Create`)
+5. Add and commit your paper
+6. Create a new branch called `gh-pages`
+7. And publish all to `Github`
+8. Look at the website http://<yourgithubname>.github.io/MyPaper
 
 
 

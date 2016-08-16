@@ -3,8 +3,7 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
-  beamer_presentation:
-    slide_level: 2
+  slidy_presentation: default
   ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
@@ -12,7 +11,8 @@ output:
     - --css
     - fig/journal.css
     transition: linear
-  slidy_presentation: default
+  beamer_presentation:
+    slide_level: 2
 subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 ---
 
@@ -56,7 +56,7 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 
 - Inspired by Kieran Healey's (associate professor in sociology) work: [Choosing your Workflow Applications](http://kieranhealy.org/files/misc/workflow-apps.pdf)
 
-- Some on-line courses for reproducable research:
+- Some on-line courses for reproducible research:
     - Datascience course: [https://www.coursera.org/](https://www.coursera.org/)
     - Tools for Reproducible Research [http://kbroman.org/Tools4RR/](http://kbroman.org/Tools4RR/)
     
@@ -75,9 +75,9 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 - Open workflow:
     - One that enhances *transparency*, *collaboration* and *reproducibility*
 
-## Ideal Research cycle 
+## Ideal research cycle 
 
-![Research cycle in theory](fig/ResearchCycle.pdf)
+![Research cycle in theory](fig/ResearchCycle.png)
 
 ## Research cycle in practice
 
@@ -87,7 +87,7 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 
 - Good scientific practice: *document how you have achieved your results* 
 
-- A good reproducable workflow ensures
+- A good reproducible workflow ensures
 
     - reproducibility (duh....);
     - transparency;
@@ -96,7 +96,7 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
     - efficiency;
     - self-sanity.
 
-## When should I adopt a (open) reproducable workflow?
+## When should I adopt a (open) reproducible workflow?
 
 * The sooner the better
 * But think twice about which one (switching is costly)
@@ -106,7 +106,7 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 
 Lao-tzu
 
-# Reproducability in this workshop
+# Reproducibility in this workshop
 
 ## In general
 
@@ -123,14 +123,14 @@ Lao-tzu
 
 ## In the social sciences?
 
-- Complete reproducability often not feasible
+- Complete reproducibility often not feasible
     - qualitative research
     - proprietary data (?)
 - but you can come a long way, especially with
     - theoretical work
     - quantitative (e.g., statistical or simulation) work
 
-- Goal should be more to make your research as reproducable *as possible*
+- Goal should be more to make your research as reproducible *as possible*
 
 ## Code, documentation and output
 
@@ -148,7 +148,7 @@ Lao-tzu
 4. Only output is displayed/interpreted differently (e.g., in a browser or pdf viewer)
 
 
-## Tools for reproducability
+## Tools for reproducibility
 
 - Markup lanaguages
     - `Markdown`

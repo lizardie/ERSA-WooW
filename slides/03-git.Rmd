@@ -81,6 +81,14 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "your@email.org"
 ```
 
+## Unnessarily complex? 
+
+Go to `Github Desktop` and
+
+* see your changes in your copy of ERSA-WooW
+* commit those changes with a message (done the Markdown assignment!)
+* push the **Sync** thingie
+
 - These are for attribution purposes only, it does not sign you up for any
 service
 
@@ -486,12 +494,3 @@ $ git status
 On branch master
 nothing to commit, working directory clean
 ```
-
-## Unnessarily complex? 
-
-Go to `Github Desktop` and
-
-* see your changes in your copy of ERSA-WooW
-* commit those changes with a message (done the Markdown assignment!)
-* push the **Sync** thingie
-
