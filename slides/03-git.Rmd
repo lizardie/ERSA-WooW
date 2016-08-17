@@ -3,7 +3,8 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
-  slidy_presentation: default
+  beamer_presentation:
+    slide_level: 2
   ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
@@ -11,8 +12,7 @@ output:
     - --css
     - fig/journal.css
     transition: linear
-  beamer_presentation:
-    slide_level: 2
+  slidy_presentation: default
 subtitle: '[`Git`]'
 ---
 

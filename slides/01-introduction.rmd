@@ -180,5 +180,8 @@ Only implicitly we make use of `LaTeX`, `diff`, `HTML` and `Pandoc` (all under t
 
 ## Get `Github` account and Install `GitHub Desktop`
 
-1.  Go to [https://github.com/join  ](https://github.com/join) and create account
-2.  Go to [https://desktop.github.com/](https://desktop.github.com/) and install GitHub Desktop (already done on these computers)
+1. Go to [https://github.com/join  ](https://github.com/join) and create account (the name is what people see so think twice)
+2. Go to [https://desktop.github.com/](https://desktop.github.com/) and install GitHub Desktop (already done on these computers)
+3. Find the repository ERSA-WooW and copy it (fork) 
+4. In `GitHub Desktop` go to options and add your account. 
+5. click the `+` and `clone` ERSA-WooW.
