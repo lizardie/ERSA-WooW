@@ -3,9 +3,7 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
-  beamer_presentation:
-    fig_width: 3
-    slide_level: 2
+  slidy_presentation: default
   ioslides_presentation:
     fig_height: 5
   revealjs_presentation:
@@ -14,7 +12,9 @@ output:
     - --css
     - fig/journal.css
     transition: linear
-  slidy_presentation: default
+  beamer_presentation:
+    fig_width: 3
+    slide_level: 2
 subtitle: '[`GitHub`]'
 ---
 
@@ -48,9 +48,12 @@ knitr::include_graphics("fig/Octocat.png")
 + You **pull** material from `GitHub` and you **push** material to `Github`
 + Typical workflow:
     1. *Pull* changes from `Github`
-    2. Work on some part
+    2. Work 
     3. Commit your changes to your *local* repository
-    4. Push all changes to `Github`
+    4. Work
+    5. Commit your changes to your *local* repository
+    6. etc.
+    7. Push all changes to `Github`
         - Possibly solve conflicts when cooperating 
 
 With `GitHub` Desktop push/pull is replace by sync (initial one is publish)
@@ -70,7 +73,7 @@ With `GitHub` Desktop push/pull is replace by sync (initial one is publish)
 5. Add and commit your paper
 6. Create a new branch called `gh-pages`
 7. And publish all to `Github`
-8. Look at the website http://<yourgithubname>.github.io/MyPaper
+8. Look at the website http://_YourGitHubname_.github.io/MyPaper
 
 
 
