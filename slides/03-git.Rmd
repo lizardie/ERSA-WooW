@@ -4,7 +4,10 @@ author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
   beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
     slide_level: 2
+    theme: Darmstadt
   ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
@@ -24,7 +27,7 @@ subtitle: '[`Git`]'
 
 * Keep track of changes in a project *as they occur*
 * Document the changes
-* Archive the history in a way that allows to `easily` roll back 
+* Archive the history in a way that allows to *easily* roll back 
 * Tell differences with other versions (collaboration) and be able to merge
   them
 

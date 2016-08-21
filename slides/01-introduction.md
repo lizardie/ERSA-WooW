@@ -6,7 +6,7 @@ output:
   beamer_presentation:
     colortheme: beaver
     highlight: zenburn
-    slide_level: 2
+    slide_level: 3
     theme: Darmstadt
   revealjs_presentation:
     mathjax: default
@@ -20,7 +20,9 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 
 # Introduction
 
-## **Why** this workshop?
+## Introduction
+
+### **Why** this workshop?
 
 - In the **social sciences** few attention to what tools to use (and why they make sense)
 
@@ -31,31 +33,28 @@ subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
     - access to your own files
     - make yourself more visible 
 
-## Goals of this workshop 
+### Goals of this workshop 
 
 - To make you **familiar** with some concepts and tools, being aware of the facts that
-    - there is no general, optimal, set of workflow tools
+    - there is no final, optimal, set of workflow tools
     - investment is very, very costly (in time that is)
 
-- However, being a **practical** workshop we do
+- However, being a *practical* workshop we do
 
     - work with a specific set of tools to
     - touch upon the concepts of markup languages, versioning and opening up.
 
-- Specifically, we **use**
+- Specifically, we use
 
     - `Markdown` to format a piece of text into a paper,
-    - `RStudio` as a general editor,
     - `Git` to keep track of what we have done,
-    - `GitHub` to make our material public and share as a website.
+    - `Github` to make our material public and share our ideas as a website.
 
 ## How we will do it in this workshop
 
 - Every session start with some introductionary slides 
 
-- Then some hands-on and in-class assignments
-
-- All materials can be found on [thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)
+- Then some hands-on in-class assignments
 
 ## Related work 
 
@@ -174,7 +173,7 @@ Only implicitly we make use of `LaTeX`, `diff`, `HTML` and `Pandoc` (all under t
     - Install `GitHub` account and `GitHub Desktop`
 2. `Markdown` language (45 mins.)
     - Draft an outline of a paper with `Markdown`
-3. Principles behind `Git` and workflow examples (45 mins.)
+3. Principles behind `Git` and workflow examples (60 mins.)
     - Version draft paper with `Git`
 4. Publication of your material on the open repository `GitHub` (45. mins).
     - Push paper to `Github`

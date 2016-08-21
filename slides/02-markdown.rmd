@@ -4,7 +4,10 @@ author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
   beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
     slide_level: 2
+    theme: Darmstadt
   ioslides_presentation: default
   slidy_presentation: default
 subtitle: Power at your fingertips
@@ -163,7 +166,7 @@ $$e=mc^2$$
 Inline equations just require `$ $`, e.g.: 
 
 ```Latex
-In economics it is well kwown that: 
+In economics it is well known that: 
 $\frac{d x}{d y} = -\frac{
 \partial u(x,y)/ \partial y} {
 \partial u(x,y)/ \partial x}$.
@@ -171,7 +174,7 @@ $\frac{d x}{d y} = -\frac{
 
 which renders as
 
-In economics it is well kwown that: $\frac{d x}{d y} = -\frac{
+In economics it is well known that: $\frac{d x}{d y} = -\frac{
 \partial u(x,y)/
 \partial y} {
 \partial u(x,y)/
@@ -201,7 +204,7 @@ So how do we glue everything together and produce wonderful `html`s and `pdf`s o
 
 - if not already done do:
 
-    - ```git clone https://github.com/Thdegraaff/ERSA-WooW```
+    - clone ```thdegraaff/ERSA-WooW``` and save it locally
 
 - go to the folder ```./Assignments/```
 
@@ -211,3 +214,5 @@ So how do we glue everything together and produce wonderful `html`s and `pdf`s o
 
     - This means adding Markdown tags to the basic text
     - The file [HowToWriteAShinyPaperLimited](../doc/HowToWriteAShinyPaperLimited.pdf) provides a `LaTeX` example how the format sort of should be.
+    
+- Save it with the same name.
