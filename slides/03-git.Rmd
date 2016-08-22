@@ -510,7 +510,7 @@ $ git commit -am "Completing exercise"
 * You can create a `.gitignore` file in the root folder listing files to be
   explicitly excluded from tracking
 
-- With `RStudio` create `.gitignore` file 
+- With `RStudio` create/edit `.gitignore` file 
 
 ```bash
 $ git add .gitignore
