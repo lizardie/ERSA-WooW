@@ -3,11 +3,7 @@ title: "Version control"
 author: "Thomas De Graaff"
 date: "August 23, 2016"
 output:
-  beamer_presentation:
-    colortheme: beaver
-    highlight: zenburn
-    slide_level: 2
-    theme: Darmstadt
+  slidy_presentation: default
   ioslides_presentation: default
   revealjs_presentation:
     mathjax: default
@@ -15,7 +11,11 @@ output:
     - --css
     - fig/journal.css
     transition: linear
-  slidy_presentation: default
+  beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
+    slide_level: 2
+    theme: Darmstadt
 subtitle: '[`GitHub`]'
 ---
 

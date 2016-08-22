@@ -3,13 +3,13 @@ title: "Markdown"
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
+  slidy_presentation: default
+  ioslides_presentation: default
   beamer_presentation:
     colortheme: beaver
     highlight: zenburn
     slide_level: 2
     theme: Darmstadt
-  ioslides_presentation: default
-  slidy_presentation: default
 subtitle: Power at your fingertips
 ---
 

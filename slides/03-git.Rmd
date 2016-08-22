@@ -41,9 +41,9 @@ subtitle: '[`Git`]'
 Very [neat video](https://www.youtube.com/watch?v=hNENiG7LAnc) exemplifying the concept
 
 
-# `Git`
+# `git`---theory
 
-## `Git`
+## `git`
 
 Today:
 
@@ -73,6 +73,24 @@ Main differences
     + between you and yourself
     + between you and others 
 
+## How does it work?
+
+![distributed version control systems](fig/distributed.png)
+
+(Source: [git-scm.com/book/](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control))
+
+## Taking snapshots
+
+![History of snapshots](fig/snapshots.png)
+
+(Source: [git-scm.com/book/](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
+
+## The three states
+
+![Working directory, staging area and Git directory](fig/areas.png)
+
+(Source: [git-scm.com/book/](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics))
+
 ## Unnessarily complex? 
 
 Go to `Github Desktop` and
@@ -80,6 +98,8 @@ Go to `Github Desktop` and
 * see your changes in your copy of ERSA-WooW
 * commit those changes with a message (done the Markdown assignment!)
 * push the **Sync** thingie
+
+# `git`---practice
 
 ## `git` - Requirements & Setup
 
