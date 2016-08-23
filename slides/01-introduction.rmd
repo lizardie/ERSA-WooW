@@ -3,18 +3,18 @@ title: 'ERSA-WooW: Introduction'
 author: "Thomas de Graaff"
 date: "August 23, 2016"
 output:
-  slidy_presentation: default
+  beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
+    slide_level: 2
+    theme: Darmstadt
   revealjs_presentation:
     mathjax: default
     pandoc_args:
     - --css
     - fig/journal.css
     transition: linear
-  beamer_presentation:
-    colortheme: beaver
-    highlight: zenburn
-    slide_level: 2
-    theme: Darmstadt
+  slidy_presentation: default
 subtitle: '[thomasdegraaff.nl/ERSA-WooW/](http://thomasdegraaff.nl/ERSA-WooW/)'
 ---
 

@@ -2,7 +2,7 @@
 title: "How to Write a Shiny Paper"
 author: "Thomas de Graaff"
 date: "August 11, 2016"
-output: pdf_document
+output: html_document
 ---
 
 # Why bother?
