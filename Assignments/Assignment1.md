@@ -1,6 +1,6 @@
 ---
 title:  Shiny Paper on Mobile Phones with JO
-author: Marina Toger [^fn2], John Östh [^fn3]
+author: MT [^fn2], JO [^fn3]
 date:   2017-05-06
 ---
 [^fn2]: Tel Aviv University
@@ -147,9 +147,6 @@ You know, I just discovered that:
 \end{equation}
 
 
-And what about figures, diagrams and graphs?
-
-Fortunately, figures, diagrams and graphs are much easier to handle in LaTeX than tables. And, as long as you want to draw something in a schematic way, you can even make your own diagrams and graphs using a couple of additional packages!
 
 Figures
 
