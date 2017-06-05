@@ -12,7 +12,7 @@ runtime: shiny (add above)
 
 # Abstract
 
-Here I try to document what we did with John[^fn1] for **NECTAR2017** in presentation "An exploration of Digital traces of urban flows: cell phone data census of mobility".
+Here I try to document what we did with JO[^fn1] for **NECTAR2017** in presentation "An exploration of Digital traces of urban flows: cell phone data census of mobility".
 
 [^fn1]: So we do not forget
 
