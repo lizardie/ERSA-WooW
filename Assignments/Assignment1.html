@@ -187,10 +187,10 @@ $(document).ready(function () {
 <li>Process data – calculate locations</li>
 <li>Calculate flows aggregated to 1 km²</li>
 <li>Fill OD matrix for both datasets</li>
-<li>Calculate accessibility <span class="math display">\[Aj=\frac{F_{ij}}{\sum{d^{-\beta}}}\]</span> (Hansen 1959)</li>
+<li>Calculate accessibility <span class="math inline">\(A_j=\frac{F_{ij}}{\sum{d^{-\beta}}}\)</span> (Hansen 1959)</li>
 <li>Compare accessibility values</li>
 </ol>
-<p><span class="math display">\[Aj=F_{ij}/∑d^{-\beta}\]</span>, where: <span class="math display">\[F_{ij}\]</span> are the registered (PLACE) or revealed (MIND) flow of people from i to j, <span class="math display">\[-\beta=-0.000115\]</span> for both datasets, estimated with Half-Life Model: <span class="math display">\[-\beta=- ln(0.5)/m\]</span> , where <span class="math display">\[m=6010\]</span> median distance in meters in Stockholm (Östh, Lyhagen &amp; Reggiani, 2016) d = distance from i to j in meters as crow flies</p>
+<p>Accessibility calculation: <span class="math display">\[A_j=F_{ij}/∑d^{-\beta}\]</span>, where: <span class="math inline">\(F_{ij}\)</span> are the registered (PLACE) or revealed (MIND) flow of people from i to j, <span class="math inline">\(-\beta=-0.000115\)</span> for both datasets, estimated with Half-Life Model: <span class="math inline">\(-\beta=- ln(0.5)/m\)</span> , where <span class="math inline">\(m=6010\)</span> median distance in meters in Stockholm (Östh, Lyhagen &amp; Reggiani, 2016) d = distance from i to j in meters as crow flies</p>
 <p>useful code snippets:</p>
 <p>for flow analysis we generate unique ids from x y coordinates:</p>
 <pre class="r"><code>install.packages('RStata')</code></pre>
