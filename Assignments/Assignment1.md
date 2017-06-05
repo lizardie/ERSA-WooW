@@ -1,17 +1,19 @@
 ---
 title: "Shiny Paper on Mobile Phones with JO"
-author: "MT [^fn2], JO [^fn3]"
+author: "MT, JO"
 date: '2017-05-06'
 output:
   html_document: default
   pdf_document: default
 ---
-[^fn2]: Tel Aviv University
-[^fn3]: Uppsala Universitet
+
+runtime: shiny (add above)
+
 
 # Abstract
 
-*Here I try to document what we did with John[^fn1] for **NECTAR2017** in presentation "An exploration of Digital traces of urban flows: cell phone data census of mobility".*
+Here I try to document what we did with John[^fn1] for **NECTAR2017** in presentation "An exploration of Digital traces of urban flows: cell phone data census of mobility".
+
 [^fn1]: So we do not forget
 
 # Presentation 
@@ -20,12 +22,14 @@ output:
 lots of interest in OD matrices (in fact we are funded for that)
 
 but data often are either:
-* too rarely sampled (e.g., surveys, census) 
-* imprecise - phone call records, too sparse events 
-* precise but computationally intensive 
+
+* too rarely sampled (e.g., surveys, census)
+* imprecise - phone call records, too sparse events
+* precise but computationally intensive
 * precise but unavailable
 
 so can one use cell phone data to get a valid, large-scale assessment?
+
 * yes (Calabrese et al, 2015)
 
 ![Calabrese et al, 2015](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.32.57.png "Phone with Calabrese's review part")
@@ -101,7 +105,7 @@ $F_{ij}$ are the registered (PLACE) or revealed (MIND) flow of people from i to 
 $\beta=0.000115$ for both datasets, estimated with Half-Life Model: $\beta= ln(0.5)/m$ , where $m=6010$ is the median distance in meters in Stockholm (Östh, Lyhagen & Reggiani, 2016),
 and $d$ is the distance from $i$ to $j$ in meters as crow flies
 
-
+***
 useful code snippets:
 
 for flow analysis we generate unique ids from x y coordinates:
@@ -142,4 +146,6 @@ produces Figure 1:
 
 The command `h!` states that the figure should very explicitly (the ! command) be placed about here (the h command).
 
-From here ... into the abyss
+From here ... into the abyss  
+run 
+`rmarkdown::render("file path")`
