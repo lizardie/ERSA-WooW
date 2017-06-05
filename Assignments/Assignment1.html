@@ -153,11 +153,19 @@ $(document).ready(function () {
 <p>we compare 2 datasets: <strong>census data</strong> (PLACE) with <strong>cell phone data</strong> (MIND) to assess convergent validity</p>
 <div id="place-database-statistics-sweden-scb" class="section level4">
 <h4>PLACE database (Statistics Sweden SCB)</h4>
-<p>Anonymised longitudinal registers all individuals 16 years of age and older that were registered in Sweden as of December 31 for each year, here we use employed individuals only in November) Data: education, income, demography, employment Location: geography on workplaces and housing (coordinates at 100m level) Time: annual register 1990-2014, here we use 2014 N: Almost 10 mln unique individuals in 2014 (&gt;11.5 mln 1990-2014)</p>
+<p>Anonymised longitudinal registers all individuals 16 years of age and older that were registered in Sweden as of December 31 for each year, here we use employed individuals only in November)</p>
+<p>Data: education, income, demography, employment<br />
+Location: geography on workplaces and housing (coordinates at 100m level)<br />
+Time: annual register 1990-2014, here we use 2014<br />
+N: Almost 10 mln unique individuals in 2014 (&gt;11.5 mln 1990-2014)</p>
 </div>
 <div id="mind-database-at-uppsala-university" class="section level4">
 <h4>MIND database (at Uppsala University)</h4>
-<p>Individual anonymised phone records all mobile phone users in Sweden from a major Swedish network operator Data: Network-driven CDR: calls, texts, data usage, mms, silent handovers Location: ~100 m accuracy in urban areas, recorded as long as the phone is switched on. Quality improves with mobility, decreases with stationary state and in rural locations Time: divided to 5 min time steps, continuously, here we use data from a regular Tuesday in 2016 N: Approximately 1.2 mln users</p>
+<p>Individual anonymised phone records all mobile phone users in Sweden from a major Swedish network operator</p>
+<p>Data: Network-driven CDR: calls, texts, data usage, mms, silent handovers<br />
+Location: ~100 m accuracy in urban areas, recorded as long as the phone is switched on. Quality improves with mobility, decreases with stationary state and in rural locations<br />
+Time: divided to 5 min time steps, continuously, here we use data from a regular Tuesday in 2016<br />
+N: Approximately 1.2 mln users</p>
 </div>
 </div>
 <div id="mind---estimation-of-location" class="section level3">
@@ -209,7 +217,6 @@ gen did = string(kmyd) + &quot;000&quot; + string(kmxd)</code></pre>
 <p>produces Figure 1:</p>
 
 <p>The command <code>h!</code> states that the figure should very explicitly (the ! command) be placed about here (the h command).</p>
-<p>When captions are incuded they are correctly numbered and size and position of the figure (even across columns) can easily be adjusted.</p>
 <p>From here … into the abyss</p>
 </div>
 </div>

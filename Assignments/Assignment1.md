@@ -45,25 +45,23 @@ we compare 2 datasets: **census data** (PLACE) with **cell phone data** (MIND) t
 
 #### PLACE database (Statistics Sweden SCB)
 Anonymised longitudinal registers
-	all individuals 16 years of age and older that were registered in Sweden as of December 31 for each year, here we use employed individuals only in November)
-Data: 
-	education, income, demography, employment 
-Location: 
-	geography on workplaces and housing (coordinates at 100m level)
-Time: 
-	annual register 1990-2014, here we use 2014
-N: 
-	Almost 10 mln unique  individuals in 2014 (>11.5 mln 1990-2014)
+	all individuals 16 years of age and older that were registered in Sweden as of December 31 for each year, here we use employed individuals only in November)  
+
+Data: education, income, demography, employment  
+Location:	geography on workplaces and housing (coordinates at 100m level)  
+Time:	annual register 1990-2014, here we use 2014  
+N:	Almost 10 mln unique  individuals in 2014 (>11.5 mln 1990-2014)  
 
 #### MIND database (at Uppsala University)
 Individual anonymised phone records
 	all mobile phone users in Sweden from a major Swedish network operator
+	
 Data: 
-	Network-driven CDR: calls, texts, data usage, mms, silent handovers 
+	Network-driven CDR: calls, texts, data usage, mms, silent handovers  
 Location: 
-	~100 m accuracy in urban areas, recorded as long as the phone is switched on. Quality improves with mobility, decreases with stationary state and in rural locations
+	~100 m accuracy in urban areas, recorded as long as the phone is switched on. Quality improves with mobility, decreases with stationary state and in rural locations  
 Time: 
-	divided to 5 min time steps, continuously, here we use data from a regular Tuesday in 2016
+	divided to 5 min time steps, continuously, here we use data from a regular Tuesday in 2016  
 N: 
 	Approximately 1.2 mln users
 	
