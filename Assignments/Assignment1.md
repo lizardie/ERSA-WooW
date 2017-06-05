@@ -14,7 +14,7 @@ output:
 *Here I try to document what we did with John[^fn1] for **NECTAR2017** in presentation "An exploration of Digital traces of urban flows: cell phone data census of mobility".*
 [^fn1]: So we do not forget
 
-## Presentation 
+# Presentation 
 
 ### Intro
 lots of interest in OD matrices (in fact we are funded for that)
@@ -73,7 +73,7 @@ N:
 we use tower cell ID positions, and cell ID data location estimation is imprecise for sparse event records, CDR: phone call, sms, mms and internet usage (González et al. 2008)
 BUT we have dense temporal records, because we have silent handover events ( 320 million rows for a Tuesday in November 2016)
 
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.49.48.png "Hard handover, source: Becvar & Zelenka 2006")
+![Hard handover](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.49.48.png "source: Becvar & Zelenka 2006")
 
 
 
@@ -85,6 +85,7 @@ AND the cool thing is that unlike some other methods, this is fairly fast, so on
 ### Phone data for comparison
 
 To create comparable input sets, we select commute hours for the phone data so it is theoretically close to the once-a-year survey: we choose a ‘boring’ month, a ’boring’ day and the most ‘boring’ hours - Tuesdays of November 2016
+
 Phones are assigned diurnal fixed **home** values based on the values of the mast where the longest time was spent between 00:00-07:00
 Phones are assigned **work** place based on location between 09:00-17:00
 **Mobility** 09:00-15:00 to contain all those that go to work late
@@ -103,11 +104,6 @@ $\beta=0.000115$ for both datasets, estimated with Half-Life Model: $\beta= ln(0
 and $d$ is the distance from $i$ to $j$ in meters as crow flies
 
 
-
-
-
-
-
 useful code snippets:
 
 for flow analysis we generate unique ids from x y coordinates:
@@ -122,46 +118,30 @@ gen did = string(kmyd) + "000" + string(kmxd)
 ```
 
 
-
-
-
-
-LaTeX: Without really going into the nitty gritty of this language, let's write our quintessential `hello world' program. 
-
-% hello.tex - A very simple LaTeX example!
-\documentclass{article} 
-\begin{document} 
-		Hello World! 
-\end{document} 
-
-You know, I just discovered that: 
-\begin{equation}
-	E = mc^2 
-\end{equation}
-
-
-
 Figures
 
-Because the output of LaTeX is already in pdf format it can easily incorporate figures from many format, such as the printer languages .pdf and .ps, but as well .jpeg and others. For example, this command: 
+this command: 
 
+``` latex
+\begin{figure}[h!]
+	\center 
+	\includegraphics[width=0.3\textwidth] 
+	{ligatures_latex} \caption{Correct use of ligatures in \LaTeX (Source: 
+	\href{http://nitens.org/ taraborelli/latex}
+	{Taborelli})} 
+\end{figure}
+```
+
+produces Figure 1:
 
 \begin{figure}[h!]
 	\center 
 	\includegraphics[width=0.3\textwidth] 
-	{ligatures_latex} \caption{Correct 
-	use of ligatures in \LaTeX (Source: 
+	{ligatures_latex} \caption{Correct use of ligatures in \LaTeX (Source: 
 	\href{http://nitens.org/ taraborelli/latex}
 	{Taborelli})} 
 \end{figure}
 
-
-produces Figure 1:
-
-The command h! states that the figure should very explicitly (the ! command) be placed about here (the h command).
-
-When captions are incuded they are correctly numbered and size and position of the figure (even across columns) can easily be adjusted. 
-
-
+The command `h!` states that the figure should very explicitly (the ! command) be placed about here (the h command).
 
 From here ... into the abyss
