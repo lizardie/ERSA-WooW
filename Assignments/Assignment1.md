@@ -28,7 +28,7 @@ but data often are either:
 so can one use cell phone data to get a valid, large-scale assessment?
 * yes (Calabrese et al, 2015)
 
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.32.57.png "Phone with Calabrese's review part")
+![Calabrese et al, 2015](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.32.57.png "Phone with Calabrese's review part")
 
 ### Cell phone based location estimation methods
 Network based: e.g. Cell-Id positioning (easier to implement for us) or triangulation (computationally intensive)
@@ -36,18 +36,9 @@ Handset based location services: e.g. GPS (people opt out for privacy, heavy bat
 Hybrid: e.g. network- assisted A-GPS (precise but same problems as with GPS)
 Wi-Fi based (need access to routers)
     (Steenbruggen et al., 2013; Calabrese et al., 2015)
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.39.01.png "location estimation precisions by type")
 
-### Cell network based location estimation methods
+![Trevisani & Vitaletti 2004](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.39.01.png "location estimation precisions by type")
 
-cell ID : 
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.40.45.png "cell ID: position inaccurate, cheaper computationally, bad with sparse events")
-
-cell ID + distance : 
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.40.50.png "cell ID + distance")
-
-cell ID + sector [or] cell ID + sector + distance : 
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.40.55.png "cell ID + sector, aka “pizzas” or cell ID + sector + distance , aka “bananas”: more precise, more computation intensive")
 
 ###So what do we do?
 we compare 2 datasets: **census data** (PLACE) with **cell phone data** (MIND) to assess convergent validity
@@ -102,14 +93,14 @@ Phones are assigned **work** place based on location between 09:00-17:00
 1. Process data – calculate locations 
 2. Calculate flows aggregated to 1 km²
 3. Fill OD matrix for both datasets
-4. Calculate accessibility $A_j=\frac{F_{ij}}{\sum{d^{-\beta}}}$ (Hansen 1959)
+4. Calculate accessibility $A_j$ 
 5. Compare accessibility values
 
-Accessibility calculation:
-$$A_j=F_{ij}/∑d^{-\beta}$$, where:
+Accessibility calculation (Hansen 1959):
+$$A_j=\frac{F_{ij}}{\sum{d^{-\beta}}}$$, where:
 $F_{ij}$ are the registered (PLACE) or revealed (MIND) flow of people from i to j,
-$-\beta=-0.000115$ for both datasets, estimated with Half-Life Model: $-\beta=- ln(0.5)/m$ , where $m=6010$ median distance in meters in Stockholm (Östh, Lyhagen & Reggiani, 2016)
-d = distance from i to j in meters as crow flies
+$\beta=0.000115$ for both datasets, estimated with Half-Life Model: $\beta= ln(0.5)/m$ , where $m=6010$ is the median distance in meters in Stockholm (Östh, Lyhagen & Reggiani, 2016),
+and $d$ is the distance from $i$ to $j$ in meters as crow flies
 
 
 
