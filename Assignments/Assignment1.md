@@ -1,7 +1,8 @@
 ---
-title:  Shiny Paper on Mobile Phones with JO
-author: MT [^fn2], JO [^fn3]
-date:   2017-05-06
+title: "Shiny Paper on Mobile Phones with JO"
+author: "MT [^fn2], JO [^fn3]"
+date: '2017-05-06'
+output: pdf_document
 ---
 [^fn2]: Tel Aviv University
 [^fn3]: Uppsala Universitet
@@ -99,14 +100,14 @@ Phones are assigned **work** place based on location between 09:00-17:00
 1. Process data – calculate locations 
 2. Calculate flows aggregated to 1 km²
 3. Fill OD matrix for both datasets
-4. Calculate accessibility $$Aj=\frac{F_{ij}}{\sum{d^{-\beta}}}$$ (Hansen 1959)
+4. Calculate accessibility $A_j=\frac{F_{ij}}{\sum{d^{-\beta}}}$ (Hansen 1959)
 5. Compare accessibility values
 
 
 
-$$Aj=F_{ij}/∑d^{-\beta}$$, where:
-$$F_{ij}$$ are the registered (PLACE) or revealed (MIND) flow of people from i to j,
-$$-\beta=-0.000115$$ for both datasets, estimated with Half-Life Model: $$-\beta=- ln(0.5)/m$$ , where $$m=6010$$ median distance in meters in Stockholm (Östh, Lyhagen & Reggiani, 2016)
+$$A_j=F_{ij}/∑d^{-\beta}$$, where:
+$F_{ij}$ are the registered (PLACE) or revealed (MIND) flow of people from i to j,
+$-\beta=-0.000115$ for both datasets, estimated with Half-Life Model: $-\beta=- ln(0.5)/m$ , where $m=6010$ median distance in meters in Stockholm (Östh, Lyhagen & Reggiani, 2016)
 d = distance from i to j in meters as crow flies
 
 
