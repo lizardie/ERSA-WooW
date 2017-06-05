@@ -32,7 +32,6 @@ so can one use cell phone data to get a valid, large-scale assessment?
 
 * yes (Calabrese et al, 2015)
 
-![Calabrese et al, 2015](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.32.57.png "Phone with Calabrese's review part")
 
 ### Cell phone based location estimation methods
 Network based: e.g. Cell-Id positioning (easier to implement for us) or triangulation (computationally intensive)
@@ -75,12 +74,8 @@ N:
 we use tower cell ID positions, and cell ID data location estimation is imprecise for sparse event records, CDR: phone call, sms, mms and internet usage (González et al. 2008)
 BUT we have dense temporal records, because we have silent handover events ( 320 million rows for a Tuesday in November 2016)
 
-![Hard handover](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 18.49.48.png "source: Becvar & Zelenka 2006")
-
-
-
 ### MIND - estimation of the most likely location
-![alt text](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 20.26.17.png "Our area has a high density of antennas - estimated accuracy of ~100m")
+![location](/Volumes/1TB/GitHub/ERSA-WooW/ERSA-WooW/Marinka/Screen Shot 2017-06-05 at 20.26.17.png "Our area has a high density of antennas - estimated accuracy of ~100m")
 
 AND the cool thing is that unlike some other methods, this is fairly fast, so one can exploit big data sets. We may still be wrong occasionally, but in the aggregate, most approximations are pretty good.
 
